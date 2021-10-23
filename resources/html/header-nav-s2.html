@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blocks.css" />
+
+    <!-- JS -->
+    <script src="../vendor/jquery-3.4.1.min.js"></script>
+    <script src="../vendor/foundation/js/foundation.min.js"></script>
+ 
+
+</head>
+
+<body > 
+    
+<header id="header" data-sticky-container data-toggler=".show-menu">
+    <div class="hsnav-s2 sticky" data-sticky data-options="marginTop:0">
+        <div class="topbar">
+            <div class="grid-container clearfix">
+                <ul class="top-menu menu align-right show-for-large">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="top-cta"><a href="#">CTA BUTTON</a></li>
+                </ul>
+                <div class="top-phone">
+                    <a class=" hide-for-large" href="tel:480-448-5785"><i class="icn-phone"></i> 480 448 5785</a>
+                </div>
+            </div> 
+        </div>
+        <div class="navbar">
+            <div class="grid-container">
+                <a class="navlogo" href="#">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
+                <div class="navcall show-for-large"> 
+                    <img src="img/hsnav-2.png" alt="" />
+                    <h6>Questions? Need a quote? Call 24/7!</h6> 
+                    <a href="tel:480-448-5785"><i class="icn-phone"></i> 480 448 5785</a>
+                </div>
+                <nav class="navmenu show-for-large">
+                    <ul class="menu align-right dropdown" data-dropdown-menu>
+                        <li><a href="#">Services 1</a></li>
+                        <li><a href="#">Services 2</a></li>
+                        <li><a href="#">Services 3</a></li>
+                        <li><a href="#">Services 4</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="mobmenu hide-for-large">
+                    <ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">
+                        <li class="current-menu-item"><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Services 1</a></li>
+                                <li><a href="#">Services 2</a></li>
+                                <li><a href="#">Services 3</a></li>
+                                <li><a href="#">Services 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>            
+</header>
+
+<div style="height: 1500px; background: grey"></div>
+
+<script>$(document).foundation();</script>
+</body>
+
+</html>

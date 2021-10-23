@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+    <defs>
+        <style>
+            .cls-1{fill:red}.cls-1,.cls-2{stroke:red;stroke-width:1.5px}.cls-2,.cls-5{fill:none}.cls-3{clip-path:url(#clip-path)}.cls-4{stroke:none}
+        </style>
+        <clipPath id="clip-path">
+            <circle id="Ellipse_4" cx="11.5" cy="11.5" r="11.5" class="cls-1" data-name="Ellipse 4" transform="translate(-.067 -.067)"/>
+        </clipPath>
+    </defs>
+    <g id="icn-account" transform="translate(-1362.656 -297.656)">
+        <g id="Ellipse_3" class="cls-2" data-name="Ellipse 3" transform="translate(1362.656 297.656)">
+            <circle cx="11.5" cy="11.5" r="11.5" class="cls-4"/>
+            <circle cx="11.5" cy="11.5" r="10.75" class="cls-5"/>
+        </g>
+        <g id="Ellipse_1" class="cls-1" data-name="Ellipse 1" transform="translate(1370.656 302.656)">
+            <circle cx="3.5" cy="3.5" r="3.5" class="cls-4"/>
+            <circle cx="3.5" cy="3.5" r="2.75" class="cls-5"/>
+        </g>
+        <g id="Mask_Group_1" class="cls-3" data-name="Mask Group 1" transform="translate(1362.724 297.724)">
+            <g id="Ellipse_2" class="cls-1" data-name="Ellipse 2" transform="translate(2.933 13.933)">
+                <ellipse cx="8.5" cy="7" class="cls-4" rx="8.5" ry="7"/>
+                <ellipse cx="8.5" cy="7" class="cls-5" rx="7.75" ry="6.25"/>
+            </g>
+        </g>
+    </g>
+</svg>

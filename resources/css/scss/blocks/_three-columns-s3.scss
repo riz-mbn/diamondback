@@ -1,0 +1,22 @@
+
+/* BLOCK THREE COLUMNS STYLE 3 */
+.cols3-s3 {
+	position: relative;
+
+	.col-box {
+		position: relative;
+	}
+
+	.col-image {
+		margin: 0;
+	}
+
+	.col-body {
+		border: 1px solid darken($color-white, 20%);
+		padding: 30px 30px 20px;
+	}
+
+	@include media(max-width, 767px) {
+
+	}
+} 

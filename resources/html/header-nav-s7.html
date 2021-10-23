@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blocks.css" />
+
+    <!-- JS -->
+    <script src="../vendor/jquery-3.4.1.min.js"></script>
+    <script src="../vendor/foundation/js/foundation.min.js"></script>
+ 
+
+</head>
+
+<body > 
+    
+<header id="header" data-sticky-container data-toggler=".show-menu">
+    <div class="hsnav-s7 sticky" data-sticky data-options="marginTop:0">
+        <div class="navbar">
+            <a class="navlogo" href="#">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
+
+            <div class="navutil">
+                <a href="#"><i class="icn-phone circle"></i>(000) 000-000</a>
+            </div>
+
+            <nav class="navmenu show-for-large">
+                <ul class="menu align-right dropdown" data-dropdown-menu>
+                    <li class="current-menu-item"><a href="#">what our clients say</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li class="nav-cta"><a href="#">schedule consultation</a></li>
+                </ul>
+            </nav>
+            <nav class="mobmenu hide-for-large">
+                <ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">
+                    <li class="current-menu-item"><a href="#">Home</a></li>
+                    <li><a href="#">Services</a>
+                        <ul>
+                            <li><a href="#">Services 1</a></li>
+                            <li><a href="#">Services 2</a></li>
+                            <li><a href="#">Services 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>            
+</header>
+
+<div style="height: 1500px; background: grey"></div>
+
+<script>$(document).foundation();</script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+
+/* BLOCK TWO COLUMNS STYLE 6 */
+.cols2-s6 {
+	position: relative;
+
+	.media-text {
+		position: relative;
+
+		> figure, .image {
+			margin: 0;
+		}
+
+		> div, .copy {
+			padding:35px 20px 20px;
+			border: 1px solid darken($color-white, 20%);
+
+			> *:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+
+	@include media(max-width, 1280px){
+
+	}
+
+	@include media(max-width, 639px){
+		.col-body {
+			padding: 0;
+		}
+	}
+} 

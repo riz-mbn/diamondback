@@ -1,0 +1,47 @@
+
+/* BLOCK FOUR COLUMNS STYLE 1 */
+.cols4-s1 {
+	position: relative;
+
+	.col-item {
+		position: relative;
+		padding: 275px 45px 30px;
+		z-index: 1;	
+		color: $color-white;
+
+		> *:last-child {
+			margin-bottom: 0;
+		}
+
+		.bg {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right:0;
+				top: 0;
+				bottom: 0;
+				background-image: linear-gradient(to bottom, rgba(5, 20, 24, 0), $color-dblue);
+				opacity: 0.5;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit:cover;
+			}
+		}
+	}
+
+	@include media(max-width, 639px) {
+		.col-item {
+			padding: 180px 30px 30px;
+		}
+	}
+} 

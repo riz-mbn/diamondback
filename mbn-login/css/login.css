@@ -1,0 +1,49 @@
+body{background:url("../images/bg.jpg") center center no-repeat #111e49;background-size:cover;}
+#vb{position:fixed;left:0px;top:0;z-index:-100;min-width:100%;min-height:100%}
+#login h1 a{background:url("../images/logo.png") center center no-repeat;width:165px;height:107px;outline:0;box-shadow:none}
+.login form{box-shadow:none;background:none;padding-top:3px;padding-bottom:32px;border:none;}
+#backtoblog{display:none}
+#backtoblog2{position:absolute;left:33px;top:28px;}
+#backtoblog2 a{color:#cecece!important;font-size:13px;display:none;font-weight:600;text-decoration:none}
+#backtoblog2 a:hover{color:#eb1c24!important;text-decoration:underline}
+#backtoblog2 a:before{content:"<";display:inline-block;color:#eb1c24;font-size:13px;vertical-align:top;margin:0px 5px 0 0}
+#login label{font-size:10px;text-transform:uppercase;color:#ececec}
+ a{outline:0;box-shadow:none!important;}
+#login input[type="password"],
+#login input[type="text"]{width:100%;max-width:272px;height:36px;border:1px solid #464646;background:rgba(13, 13, 13, 0.75);box-shadow:none;border-radius:18px;padding:0 18px;color:#f1f1f1;font-size:13px}
+#login #wp-submit{font-size:13px;min-width:63px;height:30px;border-radius:15px;background:#eb1c24;border:none;box-shadow:0 2px 0 #ab060c;text-shadow:0px 1px 1px rgba(196, 41, 63,1)}
+.login #nav{margin-top:0px;text-align:center}
+.login #nav a{color:#cecece;font-size:13px}
+.login #nav a:hover{color:#eb1c24;}
+#login p.message{background:none;color:#cecece;}
+#login{padding:0px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
+.login #login_error, .login .message, .login .success{border-left:4px solid #eb1c24;box-shadow:none}
+.forgetmenot label{text-transform:none!important;font-size:13px!important}
+#company_footer{position:absolute;bottom:30px;left:50%;font-size:13px;color:#cecece;transform:translate(-50%,0);-webkit-transform:translate(-50%,0);width:90%;text-align:center}
+#company_footer span{color:#fff;}
+#company_footer a{color:#cecece;text-decoration:none;}
+#company_footer a:hover{color:#eb1c24;}
+.social-media-links{display:block;position: absolute;top:28px;right:33px;list-style:none;margin:0px;padding:0px;font-size:0px;}
+.social-media-links li{display:inline-block;margin:0px 5px;vertical-align:top;}
+.social-media-links li a{transition:none;width:18px;height:18px;background:url("../images/mbn-login-social-icon.png") 0 0 no-repeat;display:inline-block;}
+.social-media-links li a.fb{background-position-x:-28px}
+.social-media-links li a.tw{background-position-x:-48px}
+.social-media-links li a.ig{background-position-x:-71px}
+.social-media-links li a.pn{background-position-x:-98px}
+.social-media-links li a.in{background-position-x:-122px}
+.social-media-links li a:hover{background-position-y:-19px}
+.social-media-links li:last-child{margin-right:0px;}
+.mbn-custom-checkbox{position: relative;padding-left:22px}
+.mbn-custom-checkbox input{display:none}
+.mbn-custom-checkbox:before{position: absolute;;width:16px;height:16px;background:#fff;border-radius:8px;content:" ";vertical-align:top;left:0px;top:0px}
+.mbn-custom-checkbox.active:after{position: absolute;width:12px;height:12px;background:#eb1c24;border-radius:6px;content:" ";top:2px;left:2px}
+
+@media screen and (max-width: 639px){
+    #company_footer{text-align:center;width:90%;bottom:10px}
+    .login form{padding-bottom:10px}
+    #login h1 a{width:100px;background-size:100%}
+    #backtoblog2{left:10px;top:10px}
+    .social-media-links{top:10px;right:10px}
+    .social-media-links li{margin:0 3px}
+  
+}

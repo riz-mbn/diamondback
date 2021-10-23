@@ -1,0 +1,113 @@
+
+/* TESTIMONIAL STYLE 5 */
+.testi-s5 {
+	position: relative;
+	padding: 60px 0;
+
+	.testi-video {
+		position: relative;
+		a {
+			img {
+				width: 100%;
+			}
+		}
+
+		p {
+			font-size: 18px;
+			font-style: italic;
+			padding: 0 25px;
+		}
+	}
+	
+	.testi-slider {
+		position: relative;
+		padding: 0;
+		margin-bottom: 30px;
+		margin-right: calc((-100vw - -1440px) / 2);
+		
+		.testi-item {
+			margin: 35px 15px;
+			color: $color-grey;
+			padding: 40px 30px 20px;
+
+			.summary {
+				font-size: 16px;
+				font-style: italic;
+			}
+
+			.author {
+				display: block;
+				position: relative;
+				margin-top: 30px;
+
+				> span, > a {
+					float: left;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					overflow: hidden;
+				}
+
+				.name {
+					margin: 0 0 0 60px;
+					font-size: 16px;
+					font-weight: bold;
+
+					small {
+						display: block;
+						font-size: 14px;
+						font-weight: normal;
+						color: lighten($color-black, 40%);
+					}
+				}
+			}
+
+		}
+
+		.slick-prev {
+			left: -25px;
+		}
+
+		.slick-next {
+			right: -25px;
+		}
+				
+	}
+
+
+	hr {
+		max-width: 100%;
+		opacity: 0.5;
+	}
+
+
+	@include media(max-width, 1023px) {
+		.testi-slider {
+			padding: 20px 100px;
+			
+			.slick-prev {
+				left: 30px;
+			}
+			.slick-next {
+				right: 30px;
+			}
+		}
+	}
+	
+
+	@include media(max-width, 639px) {
+		.testi-slider {
+			padding: 20px 50px;
+			margin-left: -20px;
+			margin-right: -20px;
+			
+			.slick-prev {
+				left: 10px;
+			}
+			.slick-next {
+				right: 10px;
+			}
+		}
+	}
+	
+}

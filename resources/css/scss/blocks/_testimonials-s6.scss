@@ -1,0 +1,139 @@
+
+/* TESTIMONIAL STYLE 6 */
+.testi-s6 {
+	position: relative;
+	padding: 60px 0;
+
+	.testi-head {
+		background: url(../img/quote-6-bg.png) no-repeat left top;
+		font-size: 35px;
+		font-style: italic;
+		padding: 35px 0 20px 70px;
+		display: inline-block;
+		text-align: right;
+		text-transform: none;
+		margin: 0 0 50px;
+		color: $color-dblue;
+	}
+	.testi-head small {
+		color: lighten($color-black, 6.5%);
+		display: block;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1;
+	}
+	.testi-head small strong {
+		color: $color-dblue;
+	}
+
+	.testi-slider {
+		position: relative;		
+		margin: 0 0 0 120px;
+		padding:0;
+	
+		.slick-arrow {
+			top: auto;
+			left: auto;
+			bottom: 0;
+			right: 0;
+			transform: none;
+		}
+		.slick-prev {
+			right: 50px;
+		}
+	}
+
+	.testi-item {
+		position: relative;
+		font-size: 18px;
+		font-style: italic;
+		color: #56697f;
+		line-height: 1.6;
+		display: block;
+		
+		.author {
+			font-size: 18px;
+			font-weight: bold;
+			color: $color-dblue;
+			margin: 0 0 10px;
+		}
+
+		.ratings {
+			margin-bottom: 20px;
+			font-size: 14px;
+			img {
+				display: inline-block;
+			}
+		}
+
+		.summary {
+			padding-bottom: 40px;
+
+			p {
+				margin-bottom: 10px;
+			}
+
+			.xcon {
+				display: none;
+			}
+			&.show-more .xcon {
+				display: inline;
+			}
+			&.show-more .ell {
+				display: none;
+			}
+
+			.btn-more {
+				font-size: 14px;
+				color:#d66c00;
+				font-style: normal;
+				cursor: pointer;
+			}
+			.btn-more.less {
+				display: none;
+			}
+
+			p + .ell {
+				display: none;
+			}
+		}
+	}
+
+	
+	hr {
+		max-width: 100%;
+		opacity: 0.5;
+	}
+
+
+
+	@include media(max-width, 1023px) {
+		.testi-slider {
+			padding: 20px 100px;
+			
+			.slick-prev {
+				left: 30px;
+			}
+			.slick-next {
+				right: 30px;
+			}
+		}
+	}
+	
+
+	@include media(max-width, 639px) {
+		.testi-slider {
+			padding: 20px 50px;
+			margin-left: -20px;
+			margin-right: -20px;
+			
+			.slick-prev {
+				left: 10px;
+			}
+			.slick-next {
+				right: 10px;
+			}
+		}
+	}
+	
+}

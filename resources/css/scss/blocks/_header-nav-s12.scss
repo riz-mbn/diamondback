@@ -1,0 +1,397 @@
+
+/* Header Sticky Nav Style 12 */
+header {
+	position: relative;
+	z-index: 9999;
+	
+	&.overlap {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 999;
+
+		.hsnav-s12 {
+			background: transparent;
+			box-shadow: none;
+
+			&.is-stuck {
+				background: darken($color-white, 2%);
+				box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+			}
+		}
+	}
+	.hsnav-s12 {
+		background: darken($color-white, 3%);
+		max-width: none !important;
+		
+		&.sticky {
+			position: absolute;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+		&.is-stuck {
+			position: fixed;
+			background: darken($color-white, 2%);
+			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+		}
+
+		.navbar {
+			position: relative;
+			min-height: 98px;
+			border-bottom: 1px solid darken($color-white, 25%);
+
+			.navbrand {
+				position: relative;
+				width: 120px;
+				float: left;
+				margin: 22px 0 0 30px;
+			}
+
+			.navutil {
+				float: right;
+				width: 550px;
+				padding:0 215px 0 0;
+				position: relative;
+
+				ul {
+					margin:0;
+					padding:0;
+					display:flex;
+					flex-flow: wrap;
+					li {
+						list-style: none;
+						border-left: 1px solid darken($color-white, 25%);;
+						flex: 1 1 0px;
+
+						a {
+							display: block;
+							white-space: nowrap;
+							text-align: center;
+							min-height: 49px;
+							line-height: 1;
+							font-size: 16px;
+							font-weight: 500;
+							padding: 15px 15px 13px;
+							color: lighten($color-black, 50%);
+						}
+
+						&:nth-child(1) {
+							flex: none;
+							position: absolute;
+							right: 0;
+							border-bottom: 0;
+							width: 215px;
+
+							a {
+								display: block;
+								background: $color-primary;
+								color: $color-white;
+								min-height: 99px;
+								padding: 38px 15px;
+								font-size: 20px;
+								font-weight: bold;
+							}
+						}
+
+						&:nth-child(2) {
+							flex: none;
+							border-bottom: 1px solid darken($color-white, 25%);;
+							width: 100%;
+
+							a {
+								color: lighten($color-black, 20%);
+								font-size: 20px;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+			}
+
+			.navmenu {
+				float: right;
+				a {
+					position: relative;
+					font-size: 18px;
+					font-weight: bold;
+					text-transform: uppercase;
+					padding: 38px 0;
+					margin: 0 45px;
+					line-height: 1.2;
+					color: lighten($color-black, 20%);
+
+					&:before {
+						content: "";
+						position: absolute;
+						left: 0;
+						right: 100%;
+						bottom: -4px;
+						border-bottom: 5px solid $color-primary;
+						transition: all 0.2s ease;
+					}
+					&:hover {
+						color: $color-primary;
+
+						&:before {
+							right: 0;
+						}
+					}
+				}
+
+				.submenu  {
+					a {
+						padding: 15px 20px;
+						margin: 0;
+					}
+				}
+
+				.current-menu-item > a:before {
+					right: 0;
+				}
+
+				.is-dropdown-submenu-parent {
+					> a {
+						padding-right: 20px;
+
+						&:after {
+							border:0;
+							border-right: 2px solid;
+							border-bottom: 2px solid;
+							width: 8px;
+							height: 8px;
+							transform: rotate(45deg);
+							right: 3px;
+							margin-top: -6px;
+						}
+					}
+				}
+
+				.submenu {
+					padding: 10px 0;
+					li {
+						display: block;
+						a {
+							padding: 15px 20px;
+						}
+					}
+				}
+
+				.nav-cta {
+					a {
+						background: $color-primary;
+						color: $color-white;
+						font-weight: bold;
+					}
+				}
+			}
+			
+			.navicon {
+				width: 50px; 
+				height: 50px; 
+				position: absolute;  
+				left: 10px; 
+				top: 14px; 
+				font-size: 0; 
+				cursor: pointer; 
+				display: block;
+
+				&:before {
+					content: ""; 
+					position: absolute; 
+					border-top: 3px solid $color-primary; 
+					border-bottom: 3px solid $color-primary; 
+					left: 14px; 
+					top: 16px; 
+					width: 22px; 
+					height: 19px; 
+					transition: all 0.5s ease;
+				}
+				&:after {
+					content: ""; 
+					position: absolute; 
+					border-top: 3px solid $color-primary; 
+					left: 14px; 
+					top: 24px; 
+					width: 22px; 
+					transition: all 0.5s ease;
+				}
+				@at-root header.show-menu .hsnav-s12 .navicon {
+					&:before {
+						box-shadow: none; 
+						left: 14px; 
+						top: 24px; 
+						height: 3px; 
+						transform: rotate(-45deg); 
+						border-bottom: 0; 
+					}
+					&:after {
+						width: 22px; 
+						left: 14px; 
+						top: 24px; 
+						transform: rotate(45deg);
+					}
+				}
+
+			}
+
+			.navsearch {
+				position: absolute;
+				right: 15px;
+				top: 15px;
+				width: 50px;
+				height: 50px;
+				border:0;
+				background: url(../img/icn-search.svg) no-repeat center;
+				font-size: 0;
+				cursor: pointer;
+			}
+
+			@include media(max-width, 1199px) {
+				.navutil > * {
+					margin: 0 10px;
+				}
+
+				.site-search {
+					width: 240px;
+				}
+			}
+
+			@include media(max-width, 1023px) {
+
+				padding:0;
+
+				.navutil {
+					width: 100%;
+					margin: 0;
+					background: darken($color-white, 10%);
+					text-align: right;
+					padding:7px 10px;
+				}
+				.site-search {
+					position: fixed;
+					left: 0;
+					right: 0;
+					top: -100px;
+					z-index: 999;
+					width: auto;
+					transition: all 0.5s ease;
+
+					&.show {
+						top: 130px;
+					}
+				}
+
+				.toll-free {
+					float: left;
+					margin-bottom: -8px;
+					letter-spacing: 1px;
+
+					span {
+						letter-spacing: 2px;
+						margin-bottom: -5px;
+					}
+
+					a {
+						font-size: 16px;
+						margin-left: -5px;
+					}
+				}
+				
+				.navbrand {
+					width: 100%;
+					padding:10px 30px;
+					margin: 0;
+					text-align: center;
+
+					.navlogo {
+						display: inline-block;
+						width: 160px;
+
+						img {
+							max-height: 60px;
+						}
+					}
+				}
+
+				.mobmenu {
+					position: fixed;
+					top: -100vh;
+					height: calc(100vh - 120px);
+					left: 0;
+					right: 0;
+					background: $color-primary;
+					transition:all 0.5s ease;
+					overflow: auto;
+					background: $color-white;
+
+					ul {
+						display: block;
+						margin: 0;
+						padding:10px 0; 
+						width: 100%;
+
+						li {
+							text-align: left;
+							display: block;
+							margin: 0;
+							border-top: 1px solid lighten($color-black, 90%);
+
+							a {
+								font-size: 14px; 
+								line-height: 1.1; 
+								font-weight: bold; 
+								color:lighten($color-black, 44%); 
+								text-transform: uppercase; 
+								padding:16px 35px; 
+								position: relative;
+
+								&:before {
+									position: absolute; 
+									left: 25px; 
+									top:50%; 
+									margin-top:-22px; 
+								}
+							}
+							ul {
+								margin: 0;
+								padding: 0;
+								background:$color-white;
+								li {
+									a {
+										padding-left: 45px;
+										text-transform: none; 
+										text-align: left; 
+										color: lighten($color-black, 44%); 
+									}
+								}
+							}
+						}
+					}
+
+    				.submenu-toggle {
+    					background:lighten($color-black, 90%)  url(../img/icn-plus.svg) no-repeat 17px center / 15px; 
+    					width:55px; 
+    					height: 47px; 
+    					right: 0;
+
+    					&[aria-expanded="true"] {
+    						background-image: url(../img/icn-close-r.svg); 
+    					}
+    					&:after {
+    						content: ""; border:0;
+    					}
+    				}
+					
+					@at-root header.show-menu .hsnav-s12 .mobmenu {
+						display: block;
+						top:120px;
+					}
+
+				}
+			}
+		}
+
+	}
+}

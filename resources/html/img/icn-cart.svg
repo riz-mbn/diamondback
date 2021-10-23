@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.192" height="17.759" viewBox="0 0 19.192 17.759">
+    <defs>
+        <style>
+            .cls-1{fill:#000}
+        </style>
+    </defs>
+    <g id="icn-shopping-cart" transform="translate(-1596.808 -53.15)">
+        <g id="Group_181" data-name="Group 181" transform="translate(1601.167 67.534)">
+            <path id="Path_539" d="M171.344 402.828a1.688 1.688 0 1 0 1.688 1.688 1.69 1.69 0 0 0-1.688-1.688z" class="cls-1" data-name="Path 539" transform="translate(-169.656 -402.828)"/>
+        </g>
+        <g id="Group_183" data-name="Group 183" transform="translate(1611.088 67.534)">
+            <path id="Path_540" d="M329.289 402.828a1.688 1.688 0 1 0 1.688 1.688 1.69 1.69 0 0 0-1.688-1.688z" class="cls-1" data-name="Path 540" transform="translate(-327.601 -402.828)"/>
+        </g>
+        <g id="Group_189" data-name="Group 189" transform="translate(1596.808 53.15)">
+            <path id="Path_543" d="M18.979 22.511a.939.939 0 0 0-.731-.347H3.571l-.3-1.439a.944.944 0 0 0-.548-.674l-2.068-.9a.471.471 0 0 0-.375.864l2.068.9 2.28 11.068a.946.946 0 0 0 .923.752h11.293a.471.471 0 0 0 0-.942H5.555l-.277-1.346h11.653a.946.946 0 0 0 .923-.752l1.318-6.4a.939.939 0 0 0-.193-.784z" class="cls-1" data-name="Path 543" transform="translate(0 -19.114)"/>
+        </g>
+    </g>
+</svg>

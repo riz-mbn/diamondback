@@ -1,0 +1,100 @@
+
+
+/* HERO STYLE 7 */
+.hero-s7 {
+	position: relative;
+
+	.hero-slider {
+		padding: 0;
+		figure {
+			position: relative;
+			float:none;
+			height: auto;
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 50%;
+				right: 0;
+				background-image: linear-gradient(to bottom, rgba($color-black, 0), rgba($color-black, 0.5));
+			}
+			
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit:cover;
+			}
+		}
+
+		.slick-track {
+			display: flex;
+			flex-flow: row wrap;
+			> div {
+				float: none;
+				flex: 0 0 auto;
+				height: auto;
+				
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit:cover;
+				}
+			}
+		}
+
+		.slick-arrow {
+			z-index: 999;
+			background-size: 10px;
+			opacity: 1;
+		}
+		.slick-prev {
+			background-image: url(../img/icn-chev-left-w.svg);
+		}
+		.slick-next {
+			background-image: url(../img/icn-chev-right-w.svg);
+		}
+	}
+
+	.hero-caption {
+		position: absolute;
+		color:$color-white;
+		left: 0;
+		right: 0;
+		bottom: 60px;
+		h5 {
+			line-height: 1.4;
+		}
+		h6 {
+			font-weight: 400;
+		}
+		p {
+			font-weight: 300;
+		}
+	}
+
+	@include media(max-width, 1280px) {
+		.hero-caption {
+			padding: 120px 0 80px;
+			font-size: 18px;
+			h1 {
+				font-size: 45px;
+			}
+		}
+	}
+
+	@include media(max-width, 1023px) {
+		.hero-caption {
+			padding: 100px 0 50px;
+		}
+	}
+	
+	@include media(max-width, 639px) {
+		.hero-caption {
+			font-size: 16px;
+			h1 {
+				font-size: 32px;
+			}
+		}
+	}
+}

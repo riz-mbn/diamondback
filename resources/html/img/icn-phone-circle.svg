@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Phone_Icon" width="23.615" height="23.615" data-name="Phone Icon" viewBox="0 0 23.615 23.615">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:red}
+        </style>
+    </defs>
+    <path id="prefix__Path_5" d="M11.808 0a11.808 11.808 0 1 0 11.807 11.808A11.807 11.807 0 0 0 11.808 0zm0 21.77a9.963 9.963 0 1 1 9.963-9.963 9.962 9.962 0 0 1-9.963 9.963z" class="prefix__cls-1" data-name="Path 5"/>
+    <path id="prefix__Path_6" d="M137.184 139.807a10.709 10.709 0 0 0 2.623-1.967 12.674 12.674 0 0 0-2.87-1.887c-.228 0-1 .92-1.2 1.022s-1.5.066-2.938-1.374a6.864 6.864 0 0 1-1.931-3.355c0-.26 1.2-1.064 1.234-1.253a11.815 11.815 0 0 0-1.847-2.993 12.132 12.132 0 0 0-2.255 2.624c0 .2.182 2.8 3.469 6.084s5.452 3.098 5.715 3.099z" class="prefix__cls-1" data-name="Path 6" transform="translate(-122.096 -122.097)"/>
+</svg>

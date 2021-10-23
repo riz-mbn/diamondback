@@ -1,0 +1,178 @@
+
+//Text color
+.text-primary {
+    color:$color-primary
+}
+.text-secondary {
+    color:$color-secondary
+}
+.text-warning {
+    color:$color-warning
+}
+
+//Font Weights
+.fw-light {
+    font-weight: 300;
+}
+.fw-normal {
+    font-weight: 400;
+}
+.fw-bold {
+    font-weight: 700;
+}
+
+
+
+//Custom foundation 
+@include media(min-width, 1600px) {
+    .grid-x { 
+        > .xlarge-3 {
+            width: 25%;
+        }
+    }
+    
+    .grid-margin-x {
+        > .xlarge-3 {
+            width: calc(25% - 30px);
+        }
+    }
+}
+ 
+@include media(max-width, 1023px) {
+    .grid-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@include media(max-width, 375px) {
+    .grid-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+.breadcrumbs {
+    padding:30px 0;
+
+    li {
+        text-transform: none;
+
+        img {
+            vertical-align: top;
+        }
+
+        &:not(:last-child):after {
+            content: "\63";
+            font-family: "apt-icons" !important;
+        }
+        a {
+            color: $color-dark;
+            font-size: 13px;
+        }
+    }
+}
+
+
+.badge {
+    vertical-align: middle;
+    &.dark {
+        background: $color-dark;
+    }
+}
+
+.label {
+	border-radius: 5px;
+
+    &.dark {
+        background: $color-dark;
+    }
+}
+
+
+//Sticky Fixer for smooth scroll content
+.sticky-fixer {
+    margin-top: -150px;
+    padding-top: 150px;
+}
+
+// Slick Custom button
+.slick-slider {
+	position: relative;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	.slick-arrow {
+		width: 30px;
+		height: 30px;
+		font-size: 0;
+		cursor: pointer;
+		opacity: 0.3;
+		border:0 !important;
+
+		position: absolute;
+		top:50%;
+		transform:translate(0, -50%);
+
+		&:hover {
+			opacity: 1;
+		}
+		&:focus {
+			border:0;
+		}
+	}
+	.slick-prev {
+		left:10px;
+		background: url(../img/icn-chev-left.svg) no-repeat center;
+	}
+	.slick-next {
+		right: 10px;
+		background: url(../img/icn-chev-right.svg) no-repeat center;
+	}
+}
+
+
+// Slick Custom dots
+.slick-dots {
+	margin:0;
+	padding:0;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		margin:0 5px;
+
+		button {
+			font-size: 0;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: $color-black;
+			cursor: pointer;
+		}
+
+		&.slick-active {
+			button {
+				background: $color-primary;
+			}
+		}
+	}
+}
+
+//Label Overrides
+.label {
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding:9px 15px 8px;
+	line-height: 1;
+
+	&.success {
+		color: $color-white;
+	}
+
+	&.warning {
+		color: $color-white;
+	}
+}

@@ -1,0 +1,77 @@
+
+
+/* HERO STYLE 2 */
+.hero-s2 {
+	min-height: 90vh;
+	position: relative;
+
+	figure {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			right: 0;
+			background-image: linear-gradient(to bottom, rgba(5, 20, 24, 0), #051418);
+		}
+		
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit:cover;
+		}
+	}
+
+	.hero-caption {
+		text-align: center;
+		padding: 150px 0 50px;
+		position: relative;
+		color:$color-white;
+		min-height: 500px;
+		h5 {
+			line-height: 1.4;
+		}
+		h6 {
+			font-weight: 400;
+		}
+		p {
+			font-weight: 300;
+		}
+		.grid-x {
+			min-height: calc(100vh - 350px);
+		}
+	}
+
+	@include media(max-width, 1280px) {
+		.hero-caption {
+			font-size: 18px;
+			h1 {
+				font-size: 45px;
+			}
+		}
+	}
+
+	@include media(max-width, 1023px) {
+		padding: 0;
+
+		.hero-caption {
+			height: auto;
+		}
+	}
+	
+	@include media(max-width, 639px) {
+		.hero-caption {
+			font-size: 16px;
+			h1 {
+				font-size: 32px;
+			}
+		}
+	}
+}

@@ -1,0 +1,87 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+//Global Variables
+@import "./base/variables";
+@import "./base/mixins";
+
+
+//Select Header Nav
+@import "./blocks/header-nav-s1";
+@import "./blocks/header-nav-s2";
+@import "./blocks/header-nav-s3";
+@import "./blocks/header-nav-s4";
+@import "./blocks/header-nav-s5";
+@import "./blocks/header-nav-s6";
+@import "./blocks/header-nav-s7";
+@import "./blocks/header-nav-s8";
+@import "./blocks/header-nav-s9";
+@import "./blocks/header-nav-s10";
+@import "./blocks/header-nav-s11"; 
+@import "./blocks/header-nav-s12";
+@import "./blocks/header-nav-s13";
+
+
+// Select Hero
+@import "./blocks/hero-banner-s1";
+@import "./blocks/hero-banner-s2";
+@import "./blocks/hero-banner-s3";
+@import "./blocks/hero-banner-s4";
+@import "./blocks/hero-banner-s5";
+@import "./blocks/hero-banner-s6";
+@import "./blocks/hero-banner-s7"; 
+
+
+// Select Overlap
+@import "./blocks/overlap-columns-s1";
+@import "./blocks/overlap-columns-s2";
+@import "./blocks/overlap-columns-s3";
+@import "./blocks/overlap-columns-s4";
+
+
+//Block 2 columns
+@import "./blocks/two-columns-s1";
+@import "./blocks/two-columns-s2";
+@import "./blocks/two-columns-s3";
+@import "./blocks/two-columns-s4";
+@import "./blocks/two-columns-s5";
+@import "./blocks/two-columns-s6";
+@import "./blocks/two-columns-s7";
+@import "./blocks/two-columns-s8";
+
+
+//Block 3 columns
+@import "./blocks/three-columns-s1";
+@import "./blocks/three-columns-s2";
+@import "./blocks/three-columns-s3";
+
+
+//Block 4 columns
+@import "./blocks/four-columns-s1";
+@import "./blocks/four-columns-s2";
+@import "./blocks/four-columns-s3";
+
+
+// Select Testimonial
+@import "./blocks/testimonials-s1";
+@import "./blocks/testimonials-s2";
+@import "./blocks/testimonials-s3";
+@import "./blocks/testimonials-s4";
+@import "./blocks/testimonials-s5";
+@import "./blocks/testimonials-s6";
+@import "./blocks/testimonials-s7";
+@import "./blocks/testimonials-s8";
+
+
+// Select Call to Action
+@import "./blocks/call-to-action-s1";
+@import "./blocks/call-to-action-s2";
+@import "./blocks/call-to-action-s3";
+@import "./blocks/call-to-action-s4";
+@import "./blocks/call-to-action-s5";  
+
+
+//PLUGINS
+//Include slick
+@import "../../vendor/slick/slick.scss"; 

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.071" height="18.223" viewBox="0 0 16.071 18.223">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:red}
+        </style>
+    </defs>
+    <g id="prefix__icn-write" transform="translate(-955.922 -6596.352)">
+        <path id="prefix__Path_3977" d="M-21110.8-11502.926h-5.777v-17.223h14.148v7.432" class="prefix__cls-1" data-name="Path 3977" transform="translate(22073 18117)"/>
+        <path id="prefix__Path_3978" d="M-21112.795-11513.558h9.326" class="prefix__cls-1" data-name="Path 3978" transform="translate(22071.801 18114.912)"/>
+        <path id="prefix__Path_3979" d="M-21112.795-11513.558h9.326" class="prefix__cls-1" data-name="Path 3979" transform="translate(22071.801 18117.645)"/>
+        <path id="prefix__Path_3980" d="M-21112.795-11513.558h6.09" class="prefix__cls-1" data-name="Path 3980" transform="translate(22071.801 18120.377)"/>
+        <g id="prefix__Group_386" data-name="Group 386" transform="rotate(45 -7489.037 4473.914)">
+            <path id="prefix__Union_3" fill="red" d="M0 7.226h2.751l-1.375 2.2zm0 0V1a1 1 0 0 1 1-1h.752a1 1 0 0 1 1 1v6.226z" data-name="Union 3"/>
+        </g>
+    </g>
+</svg>

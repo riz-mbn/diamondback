@@ -1,0 +1,44 @@
+
+/* BLOCK FOUR COLUMNS STYLE 3 */
+.cols4-s3 {
+	position: relative;
+	
+	// Block : Columns, Image, Heading, Paragraph
+	.item {
+		position: relative;
+		padding: 0 25px;
+		border: 1px solid darken($color-white, 20%);
+		margin-bottom: 30px;
+
+		.image {
+			margin: 0 -25px 25px;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	// Block : Columns, Media & Text, Heading, Paragraph
+	.media-text {
+		position: relative;
+		display: block;
+
+		> figure {
+			margin: 0;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		> div {
+			border: 1px solid darken($color-white, 20%);
+			padding: 30px 30px 20px;
+		}
+	}
+
+	@include media(max-width, 1023px) {
+
+	}
+}

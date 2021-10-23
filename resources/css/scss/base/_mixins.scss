@@ -1,0 +1,77 @@
+// MEDIA QUERY
+@mixin media($res, $size){
+    $items: (max-width, max-height, min-width, min-height);
+
+    @if (index($items, $res)){
+        @media (#{$res}: $size) {
+            @content;
+        }
+    }
+ }
+
+
+// ANIMATION
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+
+
+@mixin centerPos{
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+@mixin centerLeftPos{
+    left:50%;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+}
+
+@mixin ulMenu{
+    display: inline-block;
+    padding:0px;
+    list-style: none;
+}
+
+
+// SVG MASK
+ @mixin iconMask($iconURL, $iconColor) {
+    background: $iconColor;
+    -webkit-mask-image: url($iconURL);
+    mask-image: url($iconURL);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}

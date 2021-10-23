@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blocks.css" />
+
+    <!-- JS -->
+    <script src="../vendor/jquery-3.4.1.min.js"></script>
+    <script src="../vendor/foundation/js/foundation.min.js"></script>
+    <script src="../vendor/slick/slick.min.js"></script>
+ 
+
+</head>
+
+<body style="background-color: #fff;"> 
+    
+<div class="grid-container">
+
+
+    <div class="testi-s6">
+        <div class="grid-x grid-margin-x">
+            <div class="large-7 cell">
+                <h2 class="testi-head">
+                    What Our Customers Say  
+                    <small>
+                        <img src="img/icn-star-ratings.svg" alt=""> 
+                        <strong>475</strong> reviews 
+                    </small>
+                </h2>   
+                <div class="testi-slider">
+                    <div class="testi-item">
+                        <h5 class="author" >Gail Gindro</h5>
+                        <div class="ratings">
+                            <img src="img/icn-star-ratings.svg" alt=""> 
+                            4 weeks ago
+                        </div>
+                        <div class="summary">
+                            <p> Unbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                        </div>
+                    </div>   
+                    <div class="testi-item">
+                        <h5 class="author" >Gail Gindro</h5>
+                        <div class="ratings">
+                            <img src="img/icn-star-ratings.svg" alt=""> 
+                            4 weeks ago
+                        </div>
+                        <div class="summary">
+                            <p> Unbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    $(function(){
+                        $('.testi-s6 .testi-slider').slick({
+                            dots: false,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: false
+                        });
+                    });
+                </script>
+
+            </div>
+            <div class="large-4 large-offset-1 cell">
+                <figure class="show-for-large"><img src="img/testi-6.jpg" alt=""></figure>
+            </div>
+
+            <div class="cell large-12">
+                <hr>
+                <div class="text-center">
+                    <a class="btn-link" href="#">Read More Reviews <i class="icn-arrow-r red"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<script>$(document).foundation();</script>
+</body>
+
+</html>

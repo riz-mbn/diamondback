@@ -1,0 +1,71 @@
+
+
+/* HERO STYLE 6 */
+.hero-s6 {
+	position: relative;
+
+	.bg {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			right: 0;
+			background-image: linear-gradient(to bottom, rgba(5, 20, 24, 0), #051418);
+		}
+		
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit:cover;
+		}
+	}
+
+	.hero-caption {
+		padding: 170px 0 120px;
+		position: relative;
+		color:$color-white;
+		min-height: 500px;
+		h5 {
+			line-height: 1.4;
+		}
+		h6 {
+			font-weight: 400;
+		}
+		p {
+			font-weight: 300;
+		}
+	}
+
+	@include media(max-width, 1280px) {
+		.hero-caption {
+			padding: 120px 0 80px;
+			font-size: 18px;
+			h1 {
+				font-size: 45px;
+			}
+		}
+	}
+
+	@include media(max-width, 1023px) {
+		.hero-caption {
+			padding: 100px 0 50px;
+		}
+	}
+	
+	@include media(max-width, 639px) {
+		.hero-caption {
+			font-size: 16px;
+			h1 {
+				font-size: 32px;
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blocks.css" />
+
+    <!-- JS -->
+    <script src="../vendor/jquery-3.4.1.min.js"></script>
+    <script src="../vendor/foundation/js/foundation.min.js"></script>
+    <script src="../vendor/slick/slick.min.js"></script>
+ 
+
+</head>
+
+<body style="background-color: #fff;"> 
+    
+
+
+
+<div class="testi-s7">
+    <div class="grid-container">
+        <h2 class="testi-head">
+            <small>Reviews and Testimonials</small>
+            What our clients say
+        </h2>
+        <div class="testi-slider">
+            <div class="testi-item">
+                <div class="summary">
+                    <p> Unbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                </div>
+                <div class="author"> 
+                    <span><img src="img/img-profile.png" alt=""></span>
+                    <figcaption class="name">
+                        John Doe 
+                        <small>Puerto Vallarta, Mexico</small>   
+                    </figcaption>
+                </div>
+            </div> 
+            <div class="testi-item">
+                <div class="summary">
+                    <p> Unbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                </div>
+                <div class="author">
+                    <span><img src="img/img-profile.png" alt=""></span>
+                    <figcaption class="name">
+                        John Doe 
+                        <small>Puerto Vallarta, Mexico</small>   
+                    </figcaption>
+                </div>
+                
+            </div>
+            <div class="testi-item">
+                <div class="summary">
+                    <p> Unbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                </div>
+                <div class="author">
+                    <span><img src="img/img-profile.png" alt=""></span>
+                    <figcaption class="name">
+                        John Doe 
+                        <small>Puerto Vallarta, Mexico</small>   
+                    </figcaption>
+                </div>
+                
+            </div>
+        </div>
+
+        <script>
+            $(function(){
+                $('.testi-s7 .testi-slider').slick({
+                    dots: true,
+                    arrows:false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    responsive: [
+                        {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 1
+                            }
+                        }
+                    ]
+
+                });
+            });
+        </script>
+    </div>
+
+</div>
+
+
+<script>$(document).foundation();</script>
+</body>
+
+</html>

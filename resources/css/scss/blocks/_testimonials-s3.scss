@@ -1,0 +1,66 @@
+
+/* TESTIMONIAL STYLE 3 */
+.testi-s3 {
+	position: relative;
+	padding: 80px 0;
+
+	.testi-slider {
+		padding: 20px 0;
+		text-align: center;	
+		
+		.testi-item {
+			font-size: 20px;
+			font-style: italic;
+			color: $color-grey;
+			padding: 0 40px;
+		}
+		.slick-prev {
+			left: -25px;
+		}
+		.slick-next {
+			right: -25px;
+		}
+
+		.rates {
+			margin-bottom: 10px;
+			img {
+				display: inline-block;
+			}
+		}
+	}
+
+	.testi-buttons {
+		text-align: center;
+	}
+
+
+	@include media(max-width, 1023px) {
+		.testi-slider {
+			padding: 20px 100px;
+			
+			.slick-prev {
+				left: 30px;
+			}
+			.slick-next {
+				right: 30px;
+			}
+		}
+	}
+	
+
+	@include media(max-width, 639px) {
+		.testi-slider {
+			padding: 20px 50px;
+			margin-left: -20px;
+			margin-right: -20px;
+			
+			.slick-prev {
+				left: 10px;
+			}
+			.slick-next {
+				right: 10px;
+			}
+		}
+	}
+	
+}

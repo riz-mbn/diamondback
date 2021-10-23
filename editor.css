@@ -1,0 +1,36 @@
+/** === Custom Block Editor === */
+
+.wp-block-group {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+}
+
+.wp-block-group:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border:1px dashed #ccc;
+}
+
+
+/* Main column width */
+.wp-block {
+  width: 95%;
+  max-width: 95%;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  width: 95%;
+  max-width: 95%;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  width: 95%;
+  max-width: 95%;
+}

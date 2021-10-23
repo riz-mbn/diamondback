@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blocks.css" />
+
+    <!-- JS -->
+    <script src="../vendor/jquery-3.4.1.min.js"></script>
+    <script src="../vendor/foundation/js/foundation.min.js"></script>
+
+</head>
+ 
+<body > 
+    
+    <section class="cta cta-s4">
+        <figure class="cta-bg"><img src="img/cta-4.jpg" alt=""></figure>
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-5 large-order-2 large-offset-2">
+                    <div class="cta-body">
+                        <h3>The quick brown fox jumps over the lazy dog that is fast asleep.</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+                        <p><a href="#" class="button phone clear large">000.000.000</a></p>
+                    </div>
+                </div>
+                <div class="cell large-5 large-order-1 align-self-bottom">
+                    <div class="cta-form">
+                        <h4>The quick brown fox jumps over the lazy dog that is fast asleep.</h4>
+                        <form action="">
+                            <div class="field js">
+                                <label for="">Label</label>
+                                <input type="text">
+                            </div>
+                            <div class="field js focus">
+                                <label for="">Label</label>
+                                <input type="text">
+                            </div>
+                            <div class="field js focus">
+                                <label for="">Label</label>
+                                <input type="text" value="John">
+                            </div>
+                            <div class="field js focus error">
+                                <label for="">Label</label>
+                                <input class="wpcf7-not-valid" type="text" value="John">
+                                <span class="wpcf7-not-valid-tip">Error Message</span>
+                            </div>
+                            <div class="action">
+                                <button class="button secondary expanded">STAND OUT Colored CTA</button>
+                            </div>
+                        </form>
+                        <script>
+                            $(function(){
+        
+                                //Fields Placeholder
+                                $('.field.js label').click(function() {
+                                    $(this).next().focus();
+                                });
+                                $('.field.js input, .field.js select, .field.js textarea').each(function() {
+                                    if ($(this).val() != '') {
+                                        $(this).parent().addClass('focus');
+                                    }
+                                });
+                                $('.field.js input, .field.js select, .field.js textarea').blur(function() {
+                                    if ($(this).val() == '') {
+                                        $(this).parent().toggleClass('focus');
+                                    }
+                                });
+                                $('.field.js input, .field.js select, .field.js textarea').focus(function() {
+                                    if ($(this).val() == '') {
+                                        $(this).parent().toggleClass('focus');
+                                    }
+                                });
+                            });
+        
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

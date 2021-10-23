@@ -1,0 +1,61 @@
+@include keyframes(heartBeat){
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+@include keyframes(headerIn){
+    from{
+        top: -100%;
+    }
+
+    to{
+        top: 0;
+    }
+}
+
+@include keyframes(subHeaderIn){
+    from{
+        -webkit-transform: translate(-100%,0);
+        transform: translate(-100%,0);
+    }
+
+    to{
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+}
+
+@include keyframes(animHighlights){
+    from{
+       background:$color-secondary;
+       color:$white;
+    }
+
+    to{
+        background:none;
+       
+    }
+}

@@ -1,0 +1,54 @@
+
+/* CALL TO ACTION STYLE 5 */
+.cta-s5 {
+	position: relative;
+	z-index: 1;
+	background: #051418;
+	text-align: center;
+
+	.cta-bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: -1;
+		overflow: hidden;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height:90%;
+			background-image: linear-gradient(to bottom, rgba(5, 20, 24, 0), #051418);
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.cta-body {
+		color: #fff;
+		font-weight: 300;
+		padding: 115px 0;
+
+		*:last-child {
+			margin-bottom: 0;;
+		}
+
+	}
+	
+	.cta-form {
+		max-width: 490px;
+		margin: 0 auto 30px;
+		padding: 25px;
+		border-radius: 5px;
+		box-shadow: 0 3px 40px 0 rgba($color-black, 0.16);
+		background-color: $color-white;
+	}
+
+	@include media(max-width, 639px) {
+		padding: 100px 0;
+	}
+}

@@ -1,0 +1,80 @@
+
+/* BLOCK THREE COLUMNS STYLE 1 */
+.cols3-s1 {
+	position: relative;
+
+	.media-text {
+		position: relative;
+
+		> figure, .image {
+			position: relative;
+			margin-bottom: 0;
+			height: 100%;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				top: 0;
+				right: 0;
+				opacity: 0.5;
+				background-image: linear-gradient(to bottom, rgba(5, 20, 24, 0), #051418);
+			}
+
+			img {
+				width: 100%;
+				height: 440px;
+				object-fit: cover;
+			}
+		}
+
+		> div, .copy {
+			padding:50px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			color: $color-white;
+			font-size: 18px;
+
+			/* vertical align top */
+			&.vtop {
+				top:0;
+				bottom: auto;
+			}
+			/* vertical align middle */
+			&.vmiddle {
+				top:50%;
+				transform: translate(0, -50%);
+				bottom: auto;
+			}
+			
+			* {
+				color: inherit;
+			}
+
+			> *:last-child {
+				margin-bottom: 0;
+			}
+			
+		}
+	}
+
+	@include media(max-width, 1280px) {
+		.media-text {
+			
+		> div, .copy {
+			padding: 30px;
+		}
+		}
+	}
+
+	@include media(max-width, 1023px) {
+	}
+
+	@include media(max-width, 767px) {
+		.col-item {
+			padding: 150px 30px 15px;
+		}
+	}
+} 

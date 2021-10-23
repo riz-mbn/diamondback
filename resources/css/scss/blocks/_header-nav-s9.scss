@@ -1,0 +1,360 @@
+
+/* Header Sticky Nav Style 9 */
+header {
+	position: relative;
+	z-index: 9999;
+	
+	&.overlap {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 999;
+
+		.hsnav-s9 {
+			background: rgba($color-white, 0.5);
+			box-shadow: none;
+		}
+	}
+	.hsnav-s9 {
+		background: $color-white;
+		max-width: none !important;
+		box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+		
+		&.sticky {
+			position: absolute;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+		&.is-stuck {
+			position: fixed;
+			background: $color-white;
+			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+		}
+
+		.navbar {
+			position: relative;
+			min-height: 110px;
+
+			.logo, .navlogo {
+				margin: 0 15px 10px;
+				width: 85px;
+			}
+
+			.navmenu {
+				position: relative;
+
+				a {
+					font-size: 16px;
+					font-weight: bold;
+					text-transform: uppercase;
+					padding: 15px 30px;
+					line-height: 1;
+					color: lighten($color-black, 13.5%);
+
+					&:hover {
+						color: $color-primary;
+					}
+				}
+
+				.is-dropdown-submenu-parent {
+					> a {
+						padding-right: 40px;
+
+						&:after {
+							border:0;
+							border-right: 2px solid;
+							border-bottom: 2px solid;
+							width: 8px;
+							height: 8px;
+							transform: rotate(45deg);
+							right: 20px;
+							margin-top: -6px;
+						}
+					}
+				}
+
+				.submenu {
+					padding: 10px 0;
+					li {
+						display: block;
+						a {
+							padding: 15px 20px;
+						}
+					}
+				}
+
+			}
+
+			.navleft {
+				float: left;
+				width: 55%;
+				display: flex;
+				align-items: center;
+				height: 110px;
+				flex-flow: wrap;
+			}
+			
+			.navright {
+				float: right;
+				width: 45%;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				height: 110px;
+				flex-flow: wrap;
+			}
+
+			.tagline {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 16px;
+				font-weight: 400;
+				font-style: italic;
+				margin: 0 10px;
+				color: lighten($color-black, 50%);
+
+				span {
+					display: inline-block;
+					position: relative;
+
+					&:after {
+						content:"";
+						display: inline-block;
+						border-top: 2px solid;
+						vertical-align: middle;
+						width: 25px;
+						margin: 0 5px 0 10px;
+					}
+				}
+
+				strong {
+					font-weight: 400;
+					color: lighten($color-black, 12.5%);
+				}
+
+				.red {
+					color: $color-primary;
+				}
+			}
+
+			
+			.btn-search,  .btn-user, .btn-shop {
+				display: inline-block;
+				vertical-align: middle;
+				min-width: 50px;
+				min-height: 50px;
+				text-align: center;
+				line-height: 50px;
+				font-size: 0;
+				margin: 0;
+			}
+
+			.btn-shop {
+				position: relative;
+				font-size: 0;
+
+				.badge {
+					position: absolute;
+					right: 0;
+					z-index: 2;
+					line-height: 1;
+				}
+			}
+			
+
+			.navutil {
+				position: relative;
+				margin: 0 30px 0 0;
+
+				a {
+					display: inline-block;
+					vertical-align: middle;
+					padding: 0 10px;
+					margin: 0 5px;
+					font-size: 16px;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+
+				.btn-search,  .btn-user, .btn-shop  {
+					font-size: 0;;
+				}
+
+			}
+
+			.navicon {
+				width: 55px; 
+				height: 50px; 
+				position: relative;  
+				font-size: 0; 
+				cursor: pointer; 
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 0 0 30px;
+				z-index: 99999;
+
+				&:before {
+					content: ""; 
+					position: absolute; 
+					border-top: 3px solid lighten($color-black, 12.5%); 
+					border-bottom: 3px solid lighten($color-black, 12.5%); 
+					left: 14px; 
+					top: 15px; 
+					width: 25px; 
+					height: 12px; 
+					transition: all 0.5s ease;
+				}
+				&:after {
+					content: ""; 
+					position: absolute; 
+					border-top: 3px solid lighten($color-black, 12.5%); 
+					left: 14px; 
+					top: 33px; 
+					width: 22px; 
+					transition: all 0.5s ease;
+				}
+				@at-root header.show-menu .hsnav-s9 .navicon {
+					&:before {
+						box-shadow: none; 
+						left: 14px; 
+						top: 24px; 
+						height: 3px; 
+						transform: rotate(-45deg); 
+						border-bottom: 0; 
+					}
+					&:after {
+						width: 25px; 
+						left: 14px; 
+						top: 24px; 
+						transform: rotate(45deg);
+					}
+				}
+
+			}		
+
+			.mobmenu {
+				position: fixed;
+				top: 0;
+				height: 100vh;
+				left: -370px;
+				width: 360px;
+				max-width: 100%;
+				transition:all 0.5s ease;
+				overflow: auto;
+				background: $color-white;
+				z-index: 9998;
+				padding: 70px 0 0;
+				box-shadow: 5px 0 6px 0 rgba($color-black, 0.1);
+
+				&:before {
+					content: "";
+					position: fixed;
+					left: 0;
+					right: 0;
+					top:0;
+					height: 50px;
+					background: $color-white;
+					z-index: 2;
+					height: 70px;
+					width: 1px;
+					transition: all 0.5s ease;
+				}
+
+				ul {
+					display: block;
+					margin: 0;
+					padding:10px 0; 
+					width: 100%;
+
+					li {
+						text-align: left;
+						display: block;
+						margin: 0;
+						//border-bottom: 1px solid lighten($color-black, 90%);
+
+						a {
+							font-size: 14px; 
+							line-height: 1.1; 
+							font-weight: bold; 
+							color:lighten($color-black, 44%); 
+							text-transform: uppercase; 
+							padding:16px 45px; 
+							position: relative;
+
+							&:before {
+								position: absolute; 
+								left: 25px; 
+								top:50%; 
+								margin-top:-22px; 
+							}
+						}
+						ul {
+							margin: 0;
+							padding: 0;
+							background:$color-white;
+							li {
+								a {
+									padding-left: 45px;
+									text-transform: none; 
+									text-align: left; 
+									color: lighten($color-black, 44%); 
+								}
+							}
+						}
+					}
+				}
+
+				.submenu-toggle {
+					background:lighten($color-black, 90%)  url(../img/icn-plus.svg) no-repeat 17px center / 15px; 
+					width:47px; 
+					height: 47px; 
+					right: 0;
+
+					&[aria-expanded="true"] {
+						background-image: url(../img/icn-close-r.svg); 
+					}
+					&:after {
+						content: ""; border:0;
+					}
+				}
+				
+				@at-root header.show-menu .hsnav-s9 .mobmenu {
+					display: block;
+					left: 0;
+
+					&:before {
+						width: 350px;
+					}
+				}
+
+			}
+
+			@include media(max-width, 1366px) {
+				.navicon {
+					margin-left: 10px;
+				}
+
+				.navmenu {
+					a {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+				}
+
+				.navutil {
+					margin: 0 15px 0 0;
+				}
+
+
+			}
+
+			@include media(max-width, 1023px) {
+
+				
+			}
+		}
+
+	}
+}

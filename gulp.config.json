@@ -1,0 +1,27 @@
+{
+    "sassDir": "./resources/css/scss",
+    "cssDir": "./resources/css",
+    "cssDist": "./assets/css",
+    "jsDir": "./resources/js",
+    "jsDist": "./assets/js",
+    "imgDir": "./resources/img",
+    "imgDist": "./assets/img",
+    "vendorDir": "./resources/vendor",
+    "vendorDist": "./assets/vendor",
+    "fontsDir": "./resources/fonts",
+    "fontsDist": "./assets/fonts",
+    "videosDir": "./resources/videos",
+    "videosDist": "./assets/videos",
+    "jsBundle": {
+        "active": false,
+        "files": {
+        }
+    },
+    "cssBundle": {
+        "active": false,
+        "files": {
+        }
+    },
+    "siteURL": "http://mardevhost.com/article-9",
+    "browserSync": true
+}

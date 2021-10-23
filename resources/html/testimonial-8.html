@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blocks.css" />
+
+    <!-- JS -->
+    <script src="../vendor/jquery-3.4.1.min.js"></script>
+    <script src="../vendor/foundation/js/foundation.min.js"></script>
+    <script src="../vendor/slick/slick.min.js"></script>
+ 
+
+</head>
+
+<body style="background-color: #fff;"> 
+    
+
+
+
+<div class="testi-s8">
+    <div class="grid-container"> 
+        <h2 class="testi-head">
+            <small>Reviews and Testimonials</small>
+            What our clients say
+        </h2>
+        <div class="testi-nav">
+            <div class="profile">
+                <figure><img src="img/img-profile.png" alt=""></figure>
+            </div>
+            <div class="profile">
+                <figure><img src="img/img-profile.png" alt=""></figure>
+            </div>
+            <div class="profile">
+                <figure><img src="img/img-profile.png" alt=""></figure>
+            </div>
+            <div class="profile">
+                <figure><img src="img/img-profile.png" alt=""></figure>
+            </div>
+        </div>
+        <div class="testi-slider">
+            <div class="testi-item">
+                <p> Unbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                <div class="author">
+                    Nick Fox
+                    <small>Puerto Vallarta, Mexico</small>   
+                </div>
+            </div>
+            <div class="testi-item">
+                <p> yUnbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                <div class="author">
+                    John Doe 
+                    <small>Puerto Vallarta, Mexico</small>   
+                </div>
+            </div>
+            <div class="testi-item">
+                <p> xUnbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                <div class="author">
+                    John Doe 
+                    <small>Puerto Vallarta, Mexico</small>   
+                </div>
+            </div>
+            <div class="testi-item">
+                <p> xUnbelievable quick response on a Saturday. Pat Edwards responded. He Tried every option to get the old unit up and running, then gave us great options to replace unit. New install in 2 days. Pat was very knowledgeable, personable and professional. Have found our new company!</p>
+                <div class="author">
+                    John Doe 
+                    <small>Puerto Vallarta, Mexico</small>   
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function(){
+                $('.testi-s8 .testi-slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    dots:true,
+                    asNavFor: '.testi-s8 .testi-nav'
+                });
+                $('.testi-s8 .testi-nav').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    asNavFor: '.testi-s8 .testi-slider',
+                    dots: false,
+                    arrows:false,
+                    centerMode: true,
+                    focusOnSelect: true
+                });
+            });
+        </script>
+    </div>
+
+</div>
+
+
+<script>$(document).foundation();</script>
+</body>
+
+</html>
