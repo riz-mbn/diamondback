@@ -75,7 +75,13 @@
 
 // PAGES
 @import "./pages/home";
+@import "./pages/inner";
 
+// Sections
+@import "./sections/header";
+@import "./sections/content";
+@import "./sections/sidebar";
+@import "./sections/footer";
 
 
 //PLUGINS
