@@ -2,9 +2,9 @@
 
     </main>
     
-    <footer id="footer" class="footer">
-            <div class="copyright">Copyright <?php echo date('Y'); ?> &copy; Company. ALL Rights Reserved.</div>
-            <div class="designby"><a href="https://www.mybizniche.com/phoenix-web-design/" target="_blank">Website Design</a> by: My Biz Niche</div>
+    <footer id="footer" class="footer text-center">
+        <div class="">* Diamondback Flooring will price match any quotes lower than ours.</div>
+        <div class="copyright">&copy; Diamondback Flooring <?php echo date('Y'); ?>. ALL RIGHTS RESERVERD.</div>
     </footer>
 </div>  
 

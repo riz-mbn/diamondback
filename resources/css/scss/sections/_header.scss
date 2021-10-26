@@ -1,8 +1,38 @@
 
+body {
+    &.admin-bar {
+		.hsnav-s5 {
+			top: 32px !important;
+		}        
+    }
+
+    @include media(max-width, 782px) {
+        
+        &.admin-bar {
+			.hsnav-s5 {
+				top: 46px !important;
+				 
+				&.is-stuck {
+					top: 0 !important;
+				}
+			}       
+            
+        }
+    }
+}
+
 /* Header Sticky Nav Style 5 */
-header {
+header {    
 	position: relative;
 	z-index: 9999;
+
+	&.sticky-container {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		margin: 0 auto;
+
+	}
 	
 	&.overlap {
 		position: absolute;
@@ -11,8 +41,7 @@ header {
 		z-index: 999;
 	}
 	.hsnav-s5 {
-		background: $color-white;
-		box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+		background: transparent;
 		max-width: none !important;
 		
 		&.sticky {
@@ -26,28 +55,95 @@ header {
 			position: fixed;
 			background: $color-white;
 			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+
+			.navbar {
+					
+				.logo, .navlogo {
+					figure {
+						&.logo-white {
+							display: none;
+						}
+						&.logo-colored {
+							display: block;
+						}
+					}
+
+				}
+				.navutil {
+					a {
+						color: $color-primary;
+						border-color: $color-primary;
+						
+
+						&:hover {
+							color: $color-primary;
+						}
+					}
+				}
+				.navmenu {
+					.nav-cta {
+						a {
+							&:hover {
+								background: transparent;
+								color: $color-primary;
+								border-color: $color-primary;							
+							}
+						}
+					}
+				}
+				.navutil { 
+
+					a {
+						&:hover {
+							color: $color-white;						
+						}
+					}
+				}
+			}
 		}
 
 		.navbar {
-			border-top:3px solid lighten($color-black, 20%);
 			position: relative;
 			padding: 14px 0;
-			min-height: 80px;
+			min-height: 120px;
+			transition: all 0.3s ease;
+
+			.grid-container {				
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
 
 			.logo, .navlogo {
 				float: left;
-				
-				height: 50px;
 				overflow: hidden;
+				
+				figure {
+					&.logo-white {
+						display: block;
+					}
+					&.logo-colored {
+						display: none;
+					}
+				}
 			}
 
 			.navmenu {
+				.nav-cta {
+					a {
+						&:hover {
+							background: transparent;
+							color: $color-white;
+							border-color: $color-white;							
+						}
+					}
+				}
 				a {
 					font-size: 16px;
-					text-transform: uppercase;
-					padding: 18px 40px;
+					text-transform: capitalize;
+					padding: 18px 30px;
 					line-height: 1;
-					color: lighten($color-black, 44%);
+					font-weight: 600;
 
 					&:hover {
 						color: $color-primary;
@@ -75,11 +171,54 @@ header {
 					}
 				}
 
-				.nav-cta {
+				.nav-cta{
 					a {
-						background: $color-primary;
+
+						i {
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+			
+			.navutil {
+				float: right;
+				margin-left: 16px;
+
+				a {
+					display: inline-block;
+					padding: 18px 30px;
+					color: $color-white;
+					border-color: $color-white;
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 1;
+					text-transform: uppercase;
+
+					&:hover {
 						color: $color-white;
-						font-weight: bold;
+						border-color: $color-primary;
+					}
+
+					i {
+						margin-right: 10px;
+					}
+				}
+
+				ul {
+					margin: 0;
+					padding: 0;
+
+					li {
+						display: inline-block;
+						vertical-align: middle;
+						margin: 0;
+						line-height: 1;
+
+						& + li {
+							border-left: 1px solid $color-white;
+						}
+
 					}
 				}
 			}
@@ -133,8 +272,61 @@ header {
 
 			}
 
+			
+			@include media(max-width, 375px) {
+
+				.navmenu {					
+
+					.nav-cta,
+					.navutil  {
+						a {
+							&.button {
+								padding: 15px !important;
+							}
+
+							i {
+								font-size: 16px !important;
+							}
+						}
+					}
+
+					.navutil {
+						margin-left: 7px !important;
+					}
+				}
+			}
+			
+			@include media(max-width, 600px) {
+				min-height: 100%;
+
+				.logo, .navlogo {
+					figure {
+						img {
+							width:180px;				
+						}
+					}
+				}
+			}
 
 			@include media(max-width, 1023px) {
+
+				.navmenu {					
+
+					.nav-cta,
+					.navutil  {
+						a {
+							&.button {
+								padding: 18px 20px;
+								min-width: 100%;
+							}
+
+							i {
+								font-size: 20px;
+								margin-right: 0;
+							}
+						}
+					}
+				}
 				.mobmenu {
 					position: fixed;
 					top: -100vh;

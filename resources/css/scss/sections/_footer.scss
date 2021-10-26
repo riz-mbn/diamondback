@@ -1,11 +1,12 @@
 
 // Select Footer Style
 .footer {
-    background: $color-dblue;
+    background: #F5F6FF;
     font-size: 14px;
+    padding:31px 0;
 
     * {
-        color: $color-white;
+        color: #545766;
     }
 
     a {
@@ -108,7 +109,6 @@
     }
 
     .copyright {
-        float: left;
         margin-right: 70px;
     }
 

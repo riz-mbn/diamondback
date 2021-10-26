@@ -1,9 +1,8 @@
 <?php 
 /**
- * Template Name: Home Page template
+ * Template Name: LP Vinyl Flooring template
  */
 get_header() ?>
-
 
 <section class="hero hero-s3">
     <div class="grid-container"> 
@@ -69,5 +68,65 @@ get_header() ?>
         </div>
     </div>
 </section>
-
+<section class="section_logos">
+    <div class="grid-container">
+        <ul>
+            <li><figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-licensed.png'; ?>" alt=""  width="302" height="80"  /></figure></li>
+            <li><figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-accredited.png'; ?>" alt=""  width="167" height="96"  /></figure></li>
+            <li><figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-roc.png'; ?>" alt=""  width="223" height="100"  /></figure></li>
+        </ul>
+    </div>
+</section>
+<section class="section_what">
+    <div class="grid-container">        
+        <div class="grid-x">
+            <div class="cell large-5 align-self-middle">
+                <h2 class="section_title">Why Choose <span class="strong">Diamondback Flooring?</span></h2>
+                <div class="media_list">
+                    <div class="media_item">
+                        <div class="media_left">
+                            <figure class=""><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-low-price.svg'; ?>" alt="" width="64" height="64" /></figure>
+                        </div>
+                        <div class="media_body">
+                            <h4 class="media_title">High Quality Products & Service at the Lowest-Price - Guaranteed!</h4>
+                            <p class="media_text">We are confident we have the best prices in the Valley that we will price-match any quote lower than ours!</p>
+                        </div>
+                    </div>
+                    <div class="media_item">
+                        <div class="media_left">
+                            <figure class="" ><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-we-come.svg'; ?>" alt="" width="64" height="64" /></figure>
+                        </div>
+                        <div class="media_body">
+                            <h4 class="media_title">We Come To You!</h4>
+                            <p class="media_text">Our innovative process allows us to bring the showroom to your home.</p>
+                        </div>
+                    </div>
+                    <div class="media_item">
+                        <div class="media_left">
+                            <figure class="" ><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-badge-sat.svg'; ?>" alt="" width="64" height="64" /></figure>
+                        </div>
+                        <div class="media_body">
+                            <h4 class="media_title">Satisfaction Guaranteed!</h4>
+                            <p class="media_text">With over 27 years in the flooring industry, our extensive knowledge and expertise in all things flooring allows us to provide premier service and work, leaving you happy with the job done- every time!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell large-6 large-offset-1 align-self-middle">
+                <div class="col-image text-right">
+                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl-1.jpg'; ?>" alt="" width="654" height="604" /></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section_testimonials">
+    <div class="grid-container">  
+        <div class="section_title text-center">            
+            <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
+            <h2>See what our customers have to say!</h2>
+        </div>
+        <?= do_shortcode('[mbn_testimonials category="Vinyl Flooring"]'); ?>
+    </div>
+</section>
 <?php get_footer() ?>

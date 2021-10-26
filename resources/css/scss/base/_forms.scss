@@ -1,6 +1,6 @@
 
 /* FORMS */
-$field-height: 54px;
+$field-height: 56px;
 $field-height-sm: 45px;
 
 ::-moz-placeholder{color:#333;opacity:1;}
@@ -18,7 +18,7 @@ textarea,
 select {
     color: lighten($color-black, 7%);
     border:0;
-    border: 1px solid darken($color-white, 12%);
+    border-bottom: 1px solid #545766;;
     height: $field-height;
     padding:15px 20px;
     font-size:16px;
@@ -39,13 +39,19 @@ select {
         height: $field-height-sm;
         padding:10px 25px 10px 10px;
     }
+
+    
+
+    @include media(max-width, 1023px) {
+        height: auto;
+    }
 }
 input[type="text"], 
 input[type="email"],
 input[type="password"],
 input[type="tel"],
 textarea {
-    background: $color-white;
+    background: #F5F6FF;
 
     &:focus {
         background: $color-white;
@@ -167,20 +173,24 @@ select {
 
 
 //Custom Class
-.field, .fields {
+.field, .fields, .gfield {
     position: relative;
-    margin-bottom: 14px;
+    margin-bottom: 32px;
     text-align: left;
 
     input, select, textarea, select {
         margin-bottom: 0;
     }
 
+    .gfield_required {
+        font-size: 0;
+    }
+
     label {
         font-size: 18px;
         line-height: 1;
-        color: lighten($color-black, 7%);
-        margin-bottom: 10px;;
+        color: #6B6F80;
+        margin-bottom: 17px;
     }
 
     [type="checkbox"] + label {
@@ -264,7 +274,11 @@ select {
         margin-bottom: -5px;
     }
 
-
+    @include media(max-width, 1023px) {
+        label {
+            font-size: 16px;
+        }
+    }
 }
 
 
@@ -334,5 +348,15 @@ ul.gform_fields  {
                 }
             }
         }
+    }
+}
+
+.gform_footer { 
+    text-align: center;
+    
+    .gform_button {
+        font-weight: 600;
+        text-transform: capitalize;
+        padding: 22px 40px !important;
     }
 }

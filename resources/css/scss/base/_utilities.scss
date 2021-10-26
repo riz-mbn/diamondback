@@ -21,6 +21,32 @@
     font-weight: 700;
 }
 
+//typo
+.strong {
+	font-weight: 600;
+}
+.underline {
+	text-decoration: underline;
+}
+.break {
+	display: block;
+
+	@media (max-width:1023px) {
+		display: inline;
+	}
+}
+
+
+//star rating
+.star-rating {
+	i {
+		&:before {
+			color: #FFD533; 
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #CC9600;
+		}
+	}
+}
 
 
 //Custom foundation 
