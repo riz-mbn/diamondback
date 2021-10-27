@@ -1,34 +1,274 @@
 section {
     
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
     
-    @include media(max-width,1023px){
-        padding: 40px 0;
+    @include media(max-width,1023px){    
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
-.section_logos {
+
+/* HERO STYLE 3 */
+.hero-s3 {
+	min-height: 1080px;
 	position: relative;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20.81%, rgba(0, 0, 0, 0.5) 85.32%), 
+	linear-gradient(0deg, #C4C4C4, #C4C4C4), linear-gradient(180deg, rgba(12, 8, 96, 0.246) 0%,
+	rgba(12, 8, 96, 0.204) 53.12%, rgba(12, 8, 96, 0.294) 100%), 
+	url(../img/bgs/hero_banner_2.jpg);
+	background-blend-mode: normal, multiply, normal, normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+    
+    padding-top: 0;
+    padding-bottom: 0;
 
-	ul {
-		margin: 0;
+	.bg {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+		z-index: -1;
+		
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit:cover;
+		}
+	}
+
+	.hero-caption {
+		padding: 150px 0 50px;
+		position: relative;
+		color: $color-white;
+        font-weight: 600;
+		min-height: 500px;
+
+        h1,h4 {
+            
+            font-weight: 600;
+        }
+
+        .subtitle {
+            
+			font-weight: 400;
+        }
+
+		p {
+			font-weight: 400;
+			color: $color-white;
+            font-size: 20px;
+		}
+
+        .separator {
+            width: 72px;
+            height: 4px;
+            background: #CED6FD; 
+            margin: 65px 0 25px;
+            margin-left: 0;
+        }
+
+		figure {
+			margin-bottom: 30px;
+		}
+
+		.grid-x {
+			min-height: calc(100vh - 350px);
+		}
+
+        .section_title {
+			color: $color-white;
+            display: flex;
+        }
+
+		.section_title_body {
+			h4 {
+				text-transform: uppercase;
+				color: #CED6FD;
+			}
+		}
+        
+	}
+
+	.hero-steps {
+		display: flex;
+		position: relative;
+		padding: 32px 24px; 
+		background: $color-white;
+		border-radius: 16px 16px 0px 0px;
+		bottom: 0;
+		justify-content: space-between;
+		
+		.step,
+		.step_text {
+			display: flex;
+			align-items: center;		
+		}
+
+		.step {
+			> figure {
+				margin-right: 32px;
+			}
+		}
+
+		.step_text {
+			width: 100%;
+			
+			> figure {
+				margin-right: 24px;
+			}
+			.step_label {
+				font-size: 15px;
+				line-height: 22px;
+				letter-spacing: 0.02em;
+				color: $color-black;
+				width: 80%;
+			}
+		}
+	}
+
+	@include media(max-width, 1280px) {
+		.hero-caption {
+			font-size: 18px;
+			h1 {
+				font-size: 45px;
+			}
+		}
+
+		.hero-logos {
+			ul {
+				li {
+					padding: 10px 30px;;
+				}
+			}
+		}
+	}
+
+	@include media(max-width, 1023px) {
 		padding: 0;
-		text-align: center;
 
-		li {
-			list-style: none;
-			display: inline-block;
-			padding: 10px 60px;
+		.hero-caption {
+			height: auto;
+
+			.section_title {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+
+				.col-image {
+					figure {
+						img {
+							width: 200px;
+						}
+					}
+				}
+			}
+
+			.section_title_body {
+				text-align: center;
+
+				p {
+					text-align: center;
+				}
+			}
+
+			.separator {
+				margin: 30px auto;
+			}
+
+		}
+		.hero-steps {
+			flex-direction: column;
+			gap: 1em;
+
+			.step {
+				align-items: center;
+    			flex-direction: column;
+
+				figure {
+					margin-bottom: 20px;
+                    margin-right: 0;
+				}
+
+				.step_text {
+					align-items: center;
+					flex-direction: column;
+					text-align: center;
+				}
+			}
+		}
+		
+	}
+	
+	@include media(max-width, 639px) {
+		.hero-caption {
+			font-size: 16px;
+			h1 {
+				font-size: 32px;
+			}
+		}
+
+		.hero-logos {
+			ul {
+				li {
+					max-width: calc(33% - 4px);
+				}
+			}
+		}
+	}
+	
+	@include media(max-width, 480px) {
+		.hero-logos {
+			ul {
+				li {
+					padding:10px;
+				}
+			}
 		}
 	}
 }
+.section_logos {
+	position: relative;
+
+    .grid-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    @include media (max-width, 1023px){
+            
+        .grid-container {
+            flex-direction: row;
+            align-items: center;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+    }
+}
 
 .section_what {
+    padding-bottom: 118px;
 
     .section_title {
         margin-bottom: 56px;
         color: #0D0693;
     }
+
+    @include media (max-width, 600px){
+        .border {
+    
+            &:after {
+                right: -10px;
+                bottom: -10px;
+            }
+        }
+
+    }
+
 }
 
 .section_testimonials {
@@ -36,5 +276,104 @@ section {
 
     .section_title {
         margin-bottom: 40px;
+    }
+}
+
+.section_why_choose {
+    min-height: 527px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20.81%, rgba(0, 0, 0, 0.5) 85.32%), 
+	linear-gradient(0deg, #C4C4C4, #C4C4C4), linear-gradient(180deg, rgba(12, 8, 96, 0.246) 0%,
+	rgba(12, 8, 96, 0.204) 53.12%, rgba(12, 8, 96, 0.294) 100%), 
+	url(../img/bgs/img-why.jpeg);
+	background-blend-mode: normal, multiply, normal, normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section_title, 
+    .subtitle {
+        color: $color-white;
+    }
+    
+    .subtitle {
+        font-weight: 400;    
+    }
+    .section_title {
+        margin-bottom: 40px;
+    }
+    
+    .section_title h2{
+        font-weight: 600;
+    }
+
+    .img_box {
+        figure {
+            margin-bottom: 16px;
+        }
+    
+        h4 {
+            color: #CED6FD;
+            font-weight: 600;
+        }
+    }
+
+    @include media (max-width, 1023px){
+        .img_box { 
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section_cta {
+
+    .contact-form {
+        background: $color-white;
+        border: 1px solid #1A0FF5;
+
+        &.bg-back {
+            &:before{
+
+            }
+        }
+
+        .col-header {
+            h3 {
+                color: $color-primary;
+                font-weight: 400;
+                line-height: 45px;
+            }
+        }
+
+    }
+    .col-image {
+        margin-bottom: 36px;        
+    }
+    
+    .section_title {
+        h5, h2{
+            color: $color-primary;
+            font-weight: 600;
+            color: #111118;
+        }
+        h5 {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        h2 {
+            text-transform: capitalize;
+        }
+        h3 {
+            font-weight: 400;
+            color: #3D404D;
+        }
+
+        .text-wrap {
+            margin-bottom: 48px;
+        }
+
+        .button {
+            font-weight: 600 !important;
+            text-transform: capitalize;
+        }
+
     }
 }

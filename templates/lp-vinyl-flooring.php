@@ -31,7 +31,7 @@ get_header() ?>
                     </div>
                 </div>
                 <div class="cell large-5 align-self-middle">
-                    <div class="hero-form">
+                    <div class="contact-form">
                         <div class="col-header text-center">
                             <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
                             <h2>Schedule Your <span class="strong">FREE</span> In-Home Estimate Today!</h2>
@@ -70,11 +70,9 @@ get_header() ?>
 </section>
 <section class="section_logos">
     <div class="grid-container">
-        <ul>
-            <li><figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-licensed.png'; ?>" alt=""  width="302" height="80"  /></figure></li>
-            <li><figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-accredited.png'; ?>" alt=""  width="167" height="96"  /></figure></li>
-            <li><figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-roc.png'; ?>" alt=""  width="223" height="100"  /></figure></li>
-        </ul>
+        <figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-licensed.png'; ?>" alt=""  width="302" height="80"  /></figure>
+        <figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-accredited.png'; ?>" alt=""  width="254" height="96"  /></figure>
+        <figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-roc.png'; ?>" alt=""  width="223" height="100"  /></figure>
     </div>
 </section>
 <section class="section_what">
@@ -113,7 +111,10 @@ get_header() ?>
                 </div>
             </div>
             <div class="cell large-6 large-offset-1 align-self-middle">
-                <div class="col-image text-right">
+                <div class="col-image float-right show-for-large">
+                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl-1.jpg'; ?>" alt="" width="654" height="604" /></figure>
+                </div>
+                <div class="col-image float-left hide-for-large">
                     <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl-1.jpg'; ?>" alt="" width="654" height="604" /></figure>
                 </div>
             </div>
@@ -127,6 +128,74 @@ get_header() ?>
             <h2>See what our customers have to say!</h2>
         </div>
         <?= do_shortcode('[mbn_testimonials category="Vinyl Flooring"]'); ?>
+    </div>
+</section>
+<section class="section_why_choose">
+    <div class="grid-container">
+        <div class="section_title text-center">
+            <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union-white.png' ?>" alt="" width="61" heihgt="32"></figure>
+            <h2>Why Choose Luxury Vinyl Flooring?</h2>
+            <h3 class="subtitle">Our Prices Beat The Competition!</h3>
+        </div>
+        <div class="grid-x ">
+            <div class="large-3 medium-6 small-12 text-center">
+                <div class="img_box">
+                    <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-waterproof.svg' ?>" alt="" width="64" heihgt="64"></figure>
+                    <h4>Waterproof</h4>
+                </div>
+            </div>
+            <div class="large-3 medium-6 small-12 text-center">
+                <div class="img_box">
+                    <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-hardwood.svg' ?>" alt="" width="64" heihgt="64"></figure>
+                    <h4>Provides a realistic <span class="break">hardwood floor look </span><span class="break">without the cost</span></h4>
+                </div>  
+            </div>
+            <div class="large-3 medium-6 small-12 text-center">
+                <div class="img_box">
+                    <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-low-maintenance.svg' ?>" alt="" width="64" heihgt="64"></figure>
+                    <h4>Low maintenance</h4>
+                </div>
+            </div>
+            <div class="large-3 medium-6 small-12 text-center">
+                <div class="img_box">
+                    <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-high-foot-traffic.svg' ?>" alt="" width="64" heihgt="64"></figure>
+                    <h4>Great for areas with high <span class="break">foot traffic</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section_cta">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell large-6 align-self-middle text-center">
+                <div class="section_title">
+                    <div class="col-image">
+                        <figure><img src="<?php echo MBN_ASSETS_URI . '/img/logo-colored.svg' ?>" alt="" width="306" heihgt="111"></figure>
+                    </div>
+                    <div class="text-wrap">
+                        <h5>Lowest price-guaranteed!*</h5>
+                        <h2>Our Prices Beat The Competition</h2>
+                        <h3 class="subtitle">We are the Most Affordable Luxury Vinyl Flooring and Installation Company In the Valley!</h3>
+                    </div>
+                    <a href="#" class="button hollow primary medium">                        
+                        <i class="fas fa-phone-alt"></i>
+                        <span class="">Call Now</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cell large-6 align-self-middle">
+                <div class="contact-form bg-back">
+                    <div class="col-header text-center">
+                        <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
+                        <h3>Schedule Your <span class="strong">FREE</span> In-Home Estimate Today!</h3>
+                    </div>
+                    <div class="col-body">
+                        <?= do_shortcode('[gravityform id="3" title="false" description="false" ajax="false"]'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <?php get_footer() ?>

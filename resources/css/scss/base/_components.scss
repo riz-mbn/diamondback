@@ -280,10 +280,12 @@ ul.custom_dropdown {
 	}
 }
 
-
 .section_title {	
 	color: $color-primary;
     font-size: 30px;
+    @include media(max-width,1023px){    
+		text-align: center;
+	}
 }
 
 .border{
@@ -302,24 +304,34 @@ ul.custom_dropdown {
 	}
 }
 
+.bg-back {
+	position: relative;
+
+	&:after {
+		content: '';
+		background: #EBEFFE;
+		position: absolute;
+		right: -19px;
+		bottom: -27px;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+	}
+}
+
 .media_list {
 	display: flex;
     flex-wrap: wrap;
 
 	.media_item { 
-		display: table-cell;
-		width: 100%;
+		display: flex;
 
-		.media_left { 
-			display: table-cell;
-			vertical-align: top;
-			margin-right: 40px;
+		.media_left { 		
 		}
 
 		.media_body {
-			width: 85%;
-			display: table-cell;
-			vertical-align: middle;
+			padding-left: 40px;
+			width: 100%;
 
 			.media_title {
 				font-weight: 600;
@@ -332,32 +344,62 @@ ul.custom_dropdown {
 
 		}
 	}
+	
+    @include media(max-width, 600px){
+		.media_item { 			
+			flex-direction: column;
+			align-items: center;
+			
+			.media_body {    
+				padding-left: 0;
+				text-align: center;
+			}
+		}
+	}
+
 }
 
 .testimonials {
-	display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(600px,1fr));
+	
+	column-count: 1;
+	column-gap: $masonry-css-column-gap;
+  
+	@include breakpoint(400px) {
+	  column-count: 1;
+	}
+  
+	@include breakpoint(600px) {
+	  column-count: 1;
+	}
+  
+	@include breakpoint(800px) {
+	  column-count: 2;
+	}
+  
+	@include breakpoint(1100px) {
+	  column-count: 2;
+	}
 
 	.testi_item {
-		background: #FFFFFF;
 		width: 600px;
-		min-height: 383px;
-		border: 1px solid #9DADFB;
-		border-radius: 4px;
-		padding: 38px 32px; 
-		margin-left: 34px;
-		margin-bottom: 30px;
+		//min-height: 383px;
+		break-inside: avoid;
+		margin-bottom: $masonry-css-column-gap;
 
 		&.border {
-			&:before {
-				width: 100% !important;
-				right: -36px;
-				bottom: -34px;
+			&:after {
+				right: -20px;
+				bottom: -16px;
 			}
 		}
 
 		.testi_inner {
+			background: #FFFFFF;
+			border: 1px solid #9DADFB;
+			border-radius: 4px;
+			padding: 38px 32px; 
+			margin-left: 34px;
+			margin-bottom: 56px;
 			
 			&:before {
 				content: url(../img/icon/icn-quote.svg);
@@ -380,4 +422,36 @@ ul.custom_dropdown {
 			}
 		}
 	}
+
+    @include media (max-width, 600px){
+        .testi_item {
+			.testi_inner {
+				margin-left: 0;
+			}
+			&.border {    
+				&:after {
+					width: 100% !important;
+					right: -10px;
+					bottom: -10px;
+				}
+			}
+		}
+
+    }
+
+	@media (max-width: 1279px) {
+		.testi_item {
+			width: auto;
+		}
+	}
+
+	@media (max-width: 1023px) {
+		.testi_item {
+			.testi_inner {
+				//margin-left: 0;
+			}
+
+		}
+	}
+
 }

@@ -360,3 +360,54 @@ ul.gform_fields  {
         padding: 22px 40px !important;
     }
 }
+
+.contact-form {
+    background: $color-white;
+    padding: 40px; 
+    border-radius: 4px;
+
+    .col-header {
+        margin-bottom: 32px;
+        
+        figure {
+            margin-bottom: 16px;
+        }
+        h2 {
+            color: $color-primary;
+            font-weight: 400;
+            line-height: 45px;
+        }
+    }
+
+    .button {
+        margin-bottom: 0;
+    }
+
+    
+    @include media (max-width, 600px){
+        &.bg-back {
+    
+            &:after {
+                right: -15px;
+                bottom: -20px;
+            }
+        }
+
+    }
+}       
+
+.gform_submission_error {
+    font-size: 14px;
+}
+.gfield_validation_message {
+    font-size: 12px;
+}
+
+.gform_submission_error,
+.gfield_validation_message  {
+    font-weight: 400;
+    color: $color-alert;
+    padding: 10px;
+    border: 1px solid $color-alert;
+    margin-top: 10px;
+}

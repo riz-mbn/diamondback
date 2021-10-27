@@ -32,15 +32,6 @@ get_header() ?>
                     </div>
                 </div>
                 <div class="cell large-5 align-self-middle">
-                    <div class="hero-form">
-                        <div class="col-header text-center">
-                            <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
-                            <h2>Schedule Your <span class="strong">FREE</span> In-Home Estimate Today!</h2>
-                        </div>
-                        <div class="col-body">
-                            <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="false"]'); ?>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
