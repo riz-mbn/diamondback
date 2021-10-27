@@ -385,6 +385,8 @@ ul.gform_fields  {
 
     
     @include media (max-width, 600px){
+        padding: 20px; 
+
         &.bg-back {
     
             &:after {

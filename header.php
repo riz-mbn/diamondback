@@ -24,13 +24,13 @@
                     <nav class="navmenu">
                         <ul class="menu align-right dropdown" data-dropdown-menu>
                             <li class="nav-cta">
-                                <a href="#" class="button primary medium">
+                                <a href="#contact" class="button primary medium">
                                     <i class="far fa-calendar-alt"></i>
                                     <span class="show-for-large">Schedule Your Free Estimate!</span>
                                 </a>
                             </li>
                             <li class="navutil">
-                                <a href="#" class="button hollow clear">
+                                <a href="tel:6024482899" class="button hollow clear">
                                     <i class="fas fa-phone-alt"></i>
                                     <span class="show-for-large">Call Now</span>
                                 </a>

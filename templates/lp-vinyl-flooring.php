@@ -4,12 +4,12 @@
  */
 get_header() ?>
 
-<section class="hero hero-s3">
+<section class="hero hero-s3 vinyl_flooring">
     <div class="grid-container"> 
         <!-- <figure class="bg"><img src="<?php echo MBN_ASSETS_URI . '/img/bgs/hero_banner_2.jpg' ?>" alt="" width="1920" heihgt="1080"></figure> -->
         <div class="hero-caption">
             <div class="grid-x grid-margin-x">
-                <div class="cell large-7 align-self-middle">
+                <div class="cell large-7 align-self-top">
                     <div class="section_title">
                         <div class="col-image hide-for-large">
                             <figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-guaranteed.svg' ?>" alt="" width="300" heihgt="234"></figure>
@@ -33,11 +33,11 @@ get_header() ?>
                 <div class="cell large-5 align-self-middle">
                     <div class="contact-form">
                         <div class="col-header text-center">
-                            <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
+                            <figure class="union"><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
                             <h2>Schedule Your <span class="strong">FREE</span> In-Home Estimate Today!</h2>
                         </div>
                         <div class="col-body">
-                            <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="false"]'); ?>
+                            <?= do_shortcode('[gravityform id="4" title="false" description="false" ajax="false"]'); ?>
                         </div>
                     </div>
                 </div>
@@ -112,10 +112,10 @@ get_header() ?>
             </div>
             <div class="cell large-6 large-offset-1 align-self-middle">
                 <div class="col-image float-right show-for-large">
-                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl-1.jpg'; ?>" alt="" width="654" height="604" /></figure>
+                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl.jpg'; ?>" alt="" width="654" height="604" /></figure>
                 </div>
-                <div class="col-image float-left hide-for-large">
-                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl-1.jpg'; ?>" alt="" width="654" height="604" /></figure>
+                <div class="col-image text-center hide-for-large">
+                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl.jpg'; ?>" alt="" width="654" height="604" /></figure>
                 </div>
             </div>
         </div>
@@ -124,7 +124,7 @@ get_header() ?>
 <section class="section_testimonials">
     <div class="grid-container">  
         <div class="section_title text-center">            
-            <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
+            <figure class="union"><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
             <h2>See what our customers have to say!</h2>
         </div>
         <?= do_shortcode('[mbn_testimonials category="Vinyl Flooring"]'); ?>
@@ -133,7 +133,7 @@ get_header() ?>
 <section class="section_why_choose">
     <div class="grid-container">
         <div class="section_title text-center">
-            <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union-white.png' ?>" alt="" width="61" heihgt="32"></figure>
+            <figure class="union"><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union-white.png' ?>" alt="" width="61" heihgt="32"></figure>
             <h2>Why Choose Luxury Vinyl Flooring?</h2>
             <h3 class="subtitle">Our Prices Beat The Competition!</h3>
         </div>
@@ -165,7 +165,7 @@ get_header() ?>
         </div>
     </div>
 </section>
-<section class="section_cta">
+<section id="contact" class="section_cta">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell large-6 align-self-middle text-center">
@@ -178,7 +178,7 @@ get_header() ?>
                         <h2>Our Prices Beat The Competition</h2>
                         <h3 class="subtitle">We are the Most Affordable Luxury Vinyl Flooring and Installation Company In the Valley!</h3>
                     </div>
-                    <a href="#" class="button hollow primary medium">                        
+                    <a href="tel:6024482899" class="button hollow primary medium">                        
                         <i class="fas fa-phone-alt"></i>
                         <span class="">Call Now</span>
                     </a>
@@ -187,11 +187,11 @@ get_header() ?>
             <div class="cell large-6 align-self-middle">
                 <div class="contact-form bg-back">
                     <div class="col-header text-center">
-                        <figure><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
+                        <figure class="union"><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
                         <h3>Schedule Your <span class="strong">FREE</span> In-Home Estimate Today!</h3>
                     </div>
                     <div class="col-body">
-                        <?= do_shortcode('[gravityform id="3" title="false" description="false" ajax="false"]'); ?>
+                        <?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="false"]'); ?>
                     </div>
                 </div>
             </div>

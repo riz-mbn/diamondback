@@ -38,7 +38,23 @@
                 }      
             });
 
+            $('.border').each(function(){
+                var img_width = $(this).find('img').attr('width');
+                $(this).attr('style', 'max-width:' + img_width + 'px');
 
+            });
+
+            //smooth scroll
+            $('a[href^="#"]').on('click',function (e) {
+                e.preventDefault();
+                var target = this.hash;
+                var $target = $(target);
+                
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top -120
+                }, 900, 'swing');
+            });
+            
         },
 
         customDropdown: function() {

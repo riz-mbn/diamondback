@@ -9,22 +9,70 @@ section {
     }
 }
 
+.grid-container {
+    padding-right: 0;
+    padding-left: 0;
+
+    @include media(max-width, 1440px) {
+        padding-right: 30px;
+        padding-left: 30px;
+    
+    }
+}
+
 
 /* HERO STYLE 3 */
 .hero-s3 {
-	min-height: 1080px;
 	position: relative;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20.81%, rgba(0, 0, 0, 0.5) 85.32%), 
-	linear-gradient(0deg, #C4C4C4, #C4C4C4), linear-gradient(180deg, rgba(12, 8, 96, 0.246) 0%,
-	rgba(12, 8, 96, 0.204) 53.12%, rgba(12, 8, 96, 0.294) 100%), 
-	url(../img/bgs/hero_banner_2.jpg);
 	background-blend-mode: normal, multiply, normal, normal;
     background-repeat: no-repeat;
-    background-size: cover;
-	
-    
+    background-size: cover;    
     padding-top: 0;
     padding-bottom: 0;
+
+    &.vinyl_flooring {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20.81%, rgba(0, 0, 0, 0.5) 85.32%), 
+        linear-gradient(0deg, #C4C4C4, #C4C4C4), linear-gradient(180deg, rgba(12, 8, 96, 0.246) 0%,
+        rgba(12, 8, 96, 0.204) 53.12%, rgba(12, 8, 96, 0.294) 100%), 
+        url(../img/bgs/hero_banner_2.jpg);
+        min-height: 1080px;
+    }
+    
+    &.dustless_removal {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20.81%, rgba(0, 0, 0, 0.5) 85.32%), 
+        linear-gradient(0deg, #C4C4C4, #C4C4C4), linear-gradient(180deg, rgba(12, 8, 96, 0.246) 0%,
+        rgba(12, 8, 96, 0.204) 53.12%, rgba(12, 8, 96, 0.294) 100%), 
+        url(../img/bgs/img-dustless.jpeg);
+        min-height: 914px;
+
+        .section_title {
+            margin-bottom: 50px;
+
+            h1 {
+                font-size: 45px;
+                line-height: 1.7;
+            }
+        }
+
+        .section_title_body {
+            h2 {
+                line-height: 1.5;
+            }
+        }
+            
+        @media (max-width: 768px) {
+            
+
+            .section_title {
+                margin-bottom: 30px;
+
+                h1 {
+                    font-size: 32px;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
 
 	.bg {
 		position: absolute;
@@ -42,7 +90,7 @@ section {
 	}
 
 	.hero-caption {
-		padding: 150px 0 50px;
+		padding: 172px 0 70px;
 		position: relative;
 		color: $color-white;
         font-weight: 600;
@@ -71,11 +119,6 @@ section {
             margin: 65px 0 25px;
             margin-left: 0;
         }
-
-		figure {
-			margin-bottom: 30px;
-		}
-
 		.grid-x {
 			min-height: calc(100vh - 350px);
 		}
@@ -305,22 +348,6 @@ section {
         font-weight: 600;
     }
 
-    .img_box {
-        figure {
-            margin-bottom: 16px;
-        }
-    
-        h4 {
-            color: #CED6FD;
-            font-weight: 600;
-        }
-    }
-
-    @include media (max-width, 1023px){
-        .img_box { 
-            margin-bottom: 30px;
-        }
-    }
 }
 
 .section_cta {
@@ -350,9 +377,8 @@ section {
     
     .section_title {
         h5, h2{
-            color: $color-primary;
+            color: #0D0693;
             font-weight: 600;
-            color: #111118;
         }
         h5 {
             text-transform: uppercase;
@@ -376,4 +402,69 @@ section {
         }
 
     }
+}
+
+.section_what_dustless {
+    padding: 66px 0 102px;
+
+    .section_title,
+    h4 {
+        margin-bottom:32px;
+    }
+
+    h2 {        
+        color: #0D0693;
+    }
+    h4{
+        font-weight: 400;
+        color: #3D404D;
+    }
+
+    .button {
+        min-width: 193px;
+        margin-bottom: 90px;
+    }
+
+    .col-image {
+        .border{
+            &:after {
+                right: -20px;
+                bottom: -28px;
+            }
+        }
+    }
+    
+    @include media (max-width, 1023px){
+        .col-btn {
+            
+            text-align: center;
+
+            .button {
+                margin-bottom: 30px;
+            }
+        }
+
+        h4 {
+            text-align: center;
+        }
+    }
+}
+
+.section_what_dustless_2 {
+    background: #F5F6FF;
+    padding: 72px 0 103px;
+
+    h3 {
+        font-weight: 400;
+        color: #0D0693;
+    }
+    .col-image {
+        .border{
+            &:after {
+                right: -25px;
+                bottom: -28px;
+            }
+        }
+    }
+
 }

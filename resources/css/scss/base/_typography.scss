@@ -60,19 +60,19 @@ h6{
 
 @include media(max-width, 1280px){
     h1{
-        font-size: 40px;
-    }
-    h2{
         font-size: 30px;
     }
-    h3{
-        font-size: 24px;
+    h2{
+        font-size: 32px;
     }
-    h4{
+    h3{
         font-size: 20px;
     }
-    h5{
+    h4{
         font-size: 16px;
+    }
+    h5{
+        font-size: 14px;
     }
     h6{
         font-size: 12px;
