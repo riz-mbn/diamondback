@@ -282,6 +282,7 @@ ul.custom_dropdown {
 
 .img_boxes {
 	display: flex;
+	gap: 2em;
 
 	.img_box {
 		figure {
@@ -290,6 +291,8 @@ ul.custom_dropdown {
 
 		h4 {
 			color: #CED6FD;
+			text-transform: capitalize !important;
+			letter-spacing: 0 !important;
 			font-weight: 600;
 		}
 	}
@@ -307,7 +310,7 @@ ul.custom_dropdown {
 }
 .section_title {	
 	color: $color-primary;
-	
+
     @include media(max-width,1023px){    
 		text-align: center;
 	}
@@ -361,6 +364,7 @@ ul.custom_dropdown {
 
 	.media_item { 
 		display: flex;
+		margin-bottom: 40px;
 
 		.media_left { 		
 		}
@@ -371,7 +375,7 @@ ul.custom_dropdown {
 
 			.media_title {
 				font-weight: 600;
-				color: #0D0693;
+				color: $color-dblue;
 			}
 	
 			.media_text {
@@ -519,5 +523,6 @@ ul.custom_dropdown {
 		gap: 2em;
 		flex-wrap: wrap;
 		margin-bottom: 30px;
+		justify-content: center
     }
 }

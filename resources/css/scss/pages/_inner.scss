@@ -25,10 +25,17 @@ section {
 .hero-s3 {
 	position: relative;
 	background-blend-mode: normal, multiply, normal, normal;
-    background-repeat: no-repeat;
-    background-size: cover;    
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     padding-top: 0;
     padding-bottom: 0;
+
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20.81%, rgba(0, 0, 0, 0.5) 85.32%), 
+    linear-gradient(0deg, #C4C4C4, #C4C4C4), linear-gradient(180deg, rgba(12, 8, 96, 0.246) 0%,
+    rgba(12, 8, 96, 0.204) 53.12%, rgba(12, 8, 96, 0.294) 100%), 
+    url(../img/bgs/hero_banner_2.jpg);
+    min-height: 1080px;
 
     &.vinyl_flooring {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20.81%, rgba(0, 0, 0, 0.5) 85.32%), 
@@ -90,7 +97,7 @@ section {
 	}
 
 	.hero-caption {
-		padding: 172px 0 70px;
+		padding: 172px 0 86px;
 		position: relative;
 		color: $color-white;
         font-weight: 600;
@@ -119,19 +126,24 @@ section {
             margin: 65px 0 25px;
             margin-left: 0;
         }
-		.grid-x {
-			min-height: calc(100vh - 350px);
-		}
-
+                
+        .grid-x {
+            min-height: 100%;
+        }
         .section_title {
 			color: $color-white;
             display: flex;
+
+            .col-image {           
+            }
+
         }
 
 		.section_title_body {
 			h4 {
 				text-transform: uppercase;
 				color: #CED6FD;
+                letter-spacing: 0.1em;
 			}
 		}
         
@@ -141,7 +153,7 @@ section {
 		display: flex;
 		position: relative;
 		padding: 32px 24px; 
-		background: $color-white;
+		background: $color-lblue;
 		border-radius: 16px 16px 0px 0px;
 		bottom: 0;
 		justify-content: space-between;
@@ -174,12 +186,21 @@ section {
 		}
 	}
 
+    @include media (min-height, 1921px){
+        .hero-caption {
+            .grid-x {
+                //min-height: calc(100vh - 350px);
+            }
+        }
+    }
+
 	@include media(max-width, 1280px) {
 		.hero-caption {
 			font-size: 18px;
 			h1 {
 				font-size: 45px;
 			}
+
 		}
 
 		.hero-logos {
@@ -190,6 +211,39 @@ section {
 			}
 		}
 	}
+	@include media(max-width, 1024px) {
+		.hero-caption {
+
+            .section_title {
+                flex-direction: column;
+            
+                .col-image {
+
+                    &.hide-for-large {
+                        display: block !important;
+                    }
+
+                    &.show-for-large {
+                        display: none!important;
+                    }
+
+                    figure{
+                        width: 200px;
+                    }
+                }
+            }
+        
+        }
+
+        .hero-steps {
+            .step {
+                figure {
+                    margin-right: 10px;
+                    width: 50px;
+                }
+            }
+        }
+    }
 
 	@include media(max-width, 1023px) {
 		padding: 0;
@@ -197,12 +251,17 @@ section {
 		.hero-caption {
 			height: auto;
 
+            h1 {
+                line-height: 1.2;
+            }
+
 			.section_title {
 				flex-direction: column;
 				align-items: center;
 				text-align: center;
 
 				.col-image {
+
 					figure {
 						img {
 							width: 200px;
@@ -249,10 +308,14 @@ section {
 	
 	@include media(max-width, 639px) {
 		.hero-caption {
+            padding: 130px 0 50px;
 			font-size: 16px;
 			h1 {
-				font-size: 32px;
+				font-size: 30px;
 			}
+            p {
+                font-size: 16px
+            }
 		}
 
 		.hero-logos {
@@ -262,9 +325,19 @@ section {
 				}
 			}
 		}
+
 	}
 	
 	@include media(max-width, 480px) {
+
+        &.vinyl_flooring {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20.81%, rgba(0, 0, 0, 0.5) 85.32%), 
+            linear-gradient(0deg, #C4C4C4, #C4C4C4), linear-gradient(180deg, rgba(12, 8, 96, 0.246) 0%,
+            rgba(12, 8, 96, 0.204) 53.12%, rgba(12, 8, 96, 0.294) 100%), 
+            url(../img/bgs/hero_banner_vinyl_mob.jpg);
+            min-height: 1080px;
+        }
+
 		.hero-logos {
 			ul {
 				li {
@@ -279,6 +352,7 @@ section {
 
     .grid-container {
         display: flex;
+        align-items: center;
         justify-content: space-evenly;
     }
 
@@ -298,7 +372,7 @@ section {
 
     .section_title {
         margin-bottom: 56px;
-        color: #0D0693;
+        color: $color-dblue;
     }
 
     @include media (max-width, 600px){
@@ -315,10 +389,14 @@ section {
 }
 
 .section_testimonials {
-    background: #F5F6FF;
+    background: $color-lblue;
 
     .section_title {
         margin-bottom: 40px;
+
+        h2 {
+            color: $color-dblue;
+        }
     }
 }
 
@@ -377,7 +455,7 @@ section {
     
     .section_title {
         h5, h2{
-            color: #0D0693;
+            color: $color-dblue;
             font-weight: 600;
         }
         h5 {
@@ -413,7 +491,7 @@ section {
     }
 
     h2 {        
-        color: #0D0693;
+        color: $color-dblue;
     }
     h4{
         font-weight: 400;
@@ -451,12 +529,12 @@ section {
 }
 
 .section_what_dustless_2 {
-    background: #F5F6FF;
+    background: $color-lblue;
     padding: 72px 0 103px;
 
     h3 {
         font-weight: 400;
-        color: #0D0693;
+        color: $color-dblue;
     }
     .col-image {
         .border{

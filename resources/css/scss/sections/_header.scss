@@ -274,6 +274,14 @@ header {
 
 			
 			@include media(max-width, 375px) {
+				
+					
+				.logo, .navlogo {
+					figure {
+						width: 126px;
+					}
+
+				}
 
 				.navmenu {					
 

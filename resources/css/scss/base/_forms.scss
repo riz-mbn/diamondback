@@ -359,6 +359,13 @@ ul.gform_fields  {
         text-transform: capitalize;
         padding: 22px 40px !important;
     }
+
+    @include media (max-width, 375px) {
+            
+        .gform_button {
+            padding: 14px !important;
+        }
+    }
 }
 
 .contact-form {
@@ -373,9 +380,9 @@ ul.gform_fields  {
             margin-bottom: 16px;
         }
         h2 {
-            color: $color-primary;
+            color: $color-dblue;
             font-weight: 400;
-            line-height: 45px;
+            line-height: 1.6;
         }
     }
 
@@ -392,6 +399,12 @@ ul.gform_fields  {
             &:after {
                 right: -15px;
                 bottom: -20px;
+            }
+        }
+
+        .col-header {
+            h2 {
+                line-height: 1.3;
             }
         }
 

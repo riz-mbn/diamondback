@@ -9,13 +9,13 @@ get_header() ?>
         <!-- <figure class="bg"><img src="<?php echo MBN_ASSETS_URI . '/img/bgs/hero_banner_2.jpg' ?>" alt="" width="1920" heihgt="1080"></figure> -->
         <div class="hero-caption">
             <div class="grid-x grid-margin-x">
-                <div class="cell large-7 align-self-top">
+                <div class="cell large-7 ">
                     <div class="section_title">
                         <div class="col-image hide-for-large">
                             <figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-guaranteed.svg' ?>" alt="" width="300" heihgt="234"></figure>
                         </div>
                         <div class="text-wrap">
-                            <h1>The <em>Most Affordable</em> <span class="break"><span class="underline">Luxury Vinyl Flooring</span> and </span><span clsas="break">Installation Company In the Valley!*</span>
+                            <h1>The <em>Most Affordable</em> <span class="break"><span class="underline">Luxury Vinyl Flooring</span> and </span><span class="break">Installation Company In</span> <span class="break">the Valley!*</span></h1>
                             <h3 class="subtitle">Our Prices Beat The Competition!</h3>
                         </div>
                         <div class="col-image show-for-large">
@@ -30,7 +30,7 @@ get_header() ?>
                         <p>Enjoy shopping for vinyl flooring options from the comfort of your home and being able to actually see what the floors will look like in your home!</p>
                     </div>
                 </div>
-                <div class="cell large-5 align-self-middle">
+                <div class="cell large-5">
                     <div class="contact-form">
                         <div class="col-header text-center">
                             <figure class="union"><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
@@ -78,7 +78,7 @@ get_header() ?>
 <section class="section_what">
     <div class="grid-container">        
         <div class="grid-x">
-            <div class="cell large-5 align-self-middle">
+            <div class="cell large-5">
                 <h2 class="section_title">Why Choose <span class="strong">Diamondback Flooring?</span></h2>
                 <div class="media_list">
                     <div class="media_item">
@@ -110,12 +110,12 @@ get_header() ?>
                     </div>
                 </div>
             </div>
-            <div class="cell large-6 large-offset-1 align-self-middle">
+            <div class="cell large-6 large-offset-1">
                 <div class="col-image float-right show-for-large">
-                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl.jpg'; ?>" alt="" width="654" height="604" /></figure>
+                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl-2.jpg'; ?>" alt="" width="654" height="604" /></figure>
                 </div>
                 <div class="col-image text-center hide-for-large">
-                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl.jpg'; ?>" alt="" width="654" height="604" /></figure>
+                    <figure class="border"><img src="<?php echo MBN_ASSETS_URI . '/img/img-vinyl-2.jpg'; ?>" alt="" width="654" height="604" /></figure>
                 </div>
             </div>
         </div>

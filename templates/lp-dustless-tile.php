@@ -7,7 +7,7 @@ get_header() ?>
     <div class="grid-container"> 
         <div class="hero-caption">
             <div class="grid-x grid-margin-x">
-                <div class="cell large-7 align-self-top">
+                <div class="cell large-7">
                     <div class="section_title">
                         <div class="col-image hide-for-large">
                             <figure><img src="<?php echo MBN_ASSETS_URI . '/img/img-arizonas-best.svg' ?>" alt="" width="248" heihgt="193"></figure>
@@ -37,7 +37,7 @@ get_header() ?>
                         </div>
                     </div>
                 </div>
-                <div class="cell large-5 align-self-middle">
+                <div class="cell large-5">
                     <div class="contact-form">
                         <div class="col-header text-center">
                             <figure class="union"><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
