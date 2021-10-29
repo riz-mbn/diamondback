@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<section id="sec-404" class="sec-404 section">
+<section id="sec-404" class="sec-404 section text-center">
     <div class="grid-container">
         <div class="text-block">
             <h1>Page Not Found.</h1>

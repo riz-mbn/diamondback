@@ -39,9 +39,9 @@
             });
 
             $('.border').each(function(){
+
                 var img_width = $(this).find('img').attr('width');
                 $(this).attr('style', 'max-width:' + img_width + 'px');
-
             });
 
             //smooth scroll

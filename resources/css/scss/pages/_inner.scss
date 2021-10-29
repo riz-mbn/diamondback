@@ -149,43 +149,6 @@ section {
         
 	}
 
-	.hero-steps {
-		display: flex;
-		position: relative;
-		padding: 32px 24px; 
-		background: $color-lblue;
-		border-radius: 16px 16px 0px 0px;
-		bottom: 0;
-		justify-content: space-between;
-		
-		.step,
-		.step_text {
-			display: flex;
-			align-items: center;		
-		}
-
-		.step {
-			> figure {
-				margin-right: 32px;
-			}
-		}
-
-		.step_text {
-			width: 100%;
-			
-			> figure {
-				margin-right: 24px;
-			}
-			.step_label {
-				font-size: 15px;
-				line-height: 22px;
-				letter-spacing: 0.02em;
-				color: $color-black;
-				width: 80%;
-			}
-		}
-	}
-
     @include media (min-height, 1921px){
         .hero-caption {
             .grid-x {
@@ -235,14 +198,6 @@ section {
         
         }
 
-        .hero-steps {
-            .step {
-                figure {
-                    margin-right: 10px;
-                    width: 50px;
-                }
-            }
-        }
     }
 
 	@include media(max-width, 1023px) {
@@ -282,26 +237,6 @@ section {
 				margin: 30px auto;
 			}
 
-		}
-		.hero-steps {
-			flex-direction: column;
-			gap: 1em;
-
-			.step {
-				align-items: center;
-    			flex-direction: column;
-
-				figure {
-					margin-bottom: 20px;
-                    margin-right: 0;
-				}
-
-				.step_text {
-					align-items: center;
-					flex-direction: column;
-					text-align: center;
-				}
-			}
 		}
 		
 	}
@@ -477,6 +412,7 @@ section {
         .button {
             font-weight: 600 !important;
             text-transform: capitalize;
+            margin-bottom: 30px !important;
         }
 
     }

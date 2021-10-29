@@ -41,10 +41,10 @@ get_header() ?>
                     <div class="contact-form">
                         <div class="col-header text-center">
                             <figure class="union"><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
-                            <h2>Schedule Your <span class="strong">FREE</span> In-Home Estimate Today!</h2>
+                            <h2>Schedule Dustless Tile Removal  </h2>
                         </div>
                         <div class="col-body">
-                            <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="false"]'); ?>
+                            <?= do_shortcode('[gravityform id="4" title="false" description="false" ajax="false"]'); ?>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ get_header() ?>
     <div class="grid-container">  
         <div class="section_title text-center">            
             <figure class="union"><img src="<?php echo MBN_ASSETS_URI . '/img/icon/icn-union.png' ?>" alt="" width="61" heihgt="32"></figure>
-            <h2>See what our customers have to say!</h2>
+            <h2>We Beat All Our Competitors Pricing!</h2>
         </div>
         <?= do_shortcode('[mbn_testimonials category="Dustless Tile Removal"]'); ?>
     </div>
@@ -125,7 +125,7 @@ get_header() ?>
                         <h3>Schedule Your <span class="strong">FREE</span> In-Home Estimate Today!</h3>
                     </div>
                     <div class="col-body">
-                        <?= do_shortcode('[gravityform id="3" title="false" description="false" ajax="false"]'); ?>
+                        <?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="false"]'); ?>
                     </div>
                 </div>
             </div>

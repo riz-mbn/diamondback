@@ -57,4 +57,30 @@ function mbn_testimonials_shortcode($atts){
 }
 add_shortcode('mbn_testimonials', 'mbn_testimonials_shortcode');
 
-
+function hero_steps_shortcode(){
+    $returnhtml = '<div class="hero-steps">
+            <div class="step">
+                <figure><img src="'. MBN_ASSETS_URI .'/img/icon/icn-step-1.svg" alt="" width="85" height="85" ></figure>
+                <div class="step_text">
+                    <figure><img src="'. MBN_ASSETS_URI . '/img/icon/icn-schedule.svg" alt="" width="48" height="48" ></figure>
+                    <span class="step_label">Schedule Your Free <span class="break">Estimate</span></span>
+                </div>
+            </div>
+            <div class="step">
+                <figure><img src="'. MBN_ASSETS_URI . '/img/icon/icn-step-2.svg" alt="" width="85" height="85" ></figure>
+                <div class="step_text">
+                    <figure><img src="'. MBN_ASSETS_URI . '/img/icon/icn-choose.svg" alt="" width="43" height="47" ></figure>
+                    <span class="step_label">Choose Which Flooring Samples You <span class="break">Want Brought To Your Home for the</span> <span class="break">In-Home Shopping Experience</span></span>
+                </div>
+            </div>
+            <div class="step">
+                <figure><img src="'. MBN_ASSETS_URI . '/img/icon/icn-step-3.svg" alt="" width="85" height="85" /></figure>
+                <div class="step_text">
+                    <figure><img src="'. MBN_ASSETS_URI . '/img/icon/icn-thumbsup.svg" alt="" width="48" height="48" /></figure>
+                    <span class="step_label">Professional Installation <span class="break">Satisfaction Guaranteed!</span></span>
+                </div>
+            </div>
+        </div>';
+    return $returnhtml;
+}
+add_shortcode('hero_steps', 'hero_steps_shortcode');
