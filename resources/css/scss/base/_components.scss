@@ -328,6 +328,7 @@ ul.custom_dropdown {
 		z-index: -1;
 		width: 90%;
 		height: 100%;
+		overflow: auto;
 	}
 
 	@include media(max-width, 1023px) {

@@ -209,3 +209,27 @@
 		color: $color-white;
 	}
 }
+
+
+.why-choose {
+	display: block;
+}
+
+.why-choose-mob {
+	display: none;
+}
+
+@include media (max-width, 1023px){
+	.why-choose {
+		display: none;
+	}
+	.why-choose-mob {
+		display: block;
+
+		.et_pb_image_wrap  {
+			img {
+				max-width: 654px;
+			}
+		}
+	}
+}

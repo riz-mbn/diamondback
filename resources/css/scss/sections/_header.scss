@@ -21,6 +21,33 @@ body {
     }
 }
 
+header.et-l--header {
+	&.is-top,
+	&:not(.is-stick)  {
+		.divi-header {
+			display: block !important;
+		}
+		.sticky-header {
+			display: none !important;
+		}
+	}
+	&.is-stick{
+		.divi-header {
+			display: none !important;
+		}
+		.sticky-header {
+			display: block !important;
+		}
+	}
+
+
+	.sticky-header {
+		position: fixed;
+		left: 0;
+		right: 0;
+	}
+}
+
 /* Header Sticky Nav Style 5 */
 header {    
 	position: relative;
@@ -193,7 +220,6 @@ header {
 					font-size: 16px;
 					font-weight: 600;
 					line-height: 1;
-					text-transform: uppercase;
 
 					&:hover {
 						color: $color-white;

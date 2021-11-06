@@ -91,8 +91,8 @@ function mbn_enqueue_scripts(){
     wp_enqueue_script('foundation', MBN_ASSETS_URI.'/vendor/foundation/js/foundation.min.js', [], $wp_version);
 
     // slick
-    wp_enqueue_style('slick', MBN_ASSETS_URI.'/vendor/slick/slick.css', [], $wp_version);
-    wp_enqueue_script('slick', MBN_ASSETS_URI.'/vendor/slick/slick.min.js', [], $wp_version);
+    // wp_enqueue_style('slick', MBN_ASSETS_URI.'/vendor/slick/slick.css', [], $wp_version);
+    // wp_enqueue_script('slick', MBN_ASSETS_URI.'/vendor/slick/slick.min.js', [], $wp_version);
 
     // Nicescroll
     // wp_enqueue_script('nicescroll', MBN_ASSETS_URI.'/vendor/jquery.nicescroll.min.js', [], $wp_version);
@@ -103,8 +103,8 @@ function mbn_enqueue_scripts(){
 
     
     // App
-    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '1.3.2');
-    wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], '1.0.4', true);
+    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '1.4.2');
+    wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], '1.2.0', true);
     
 
     // localize objects
@@ -159,4 +159,5 @@ require MBN_DIR_PATH.'/includes/post-types.php';
 require MBN_DIR_PATH.'/includes/shortcodes.php';
 require MBN_DIR_PATH.'/includes/public-hooks.php';
 require MBN_DIR_PATH.'/includes/admin-hooks.php';
+include_once(MBN_DIR_PATH . '/includes/custom-image-module.php');
 

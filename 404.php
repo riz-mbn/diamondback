@@ -1,4 +1,4 @@
-<?php get_header() ?>
+
 
 <section id="sec-404" class="sec-404 section text-center">
     <div class="grid-container">
@@ -11,4 +11,3 @@
     </div>
 </section>
 
-<?php get_footer() ?>

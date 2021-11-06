@@ -481,3 +481,17 @@ a.btn-back {
         margin:-2px 5px;
     }
 }
+
+.sched_btn {
+    position: relative;
+
+    &:before {
+        content: url(../img/icon/icn-calendar.svg);
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 21px;
+    }
+}
