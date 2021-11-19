@@ -11,13 +11,23 @@
     wp_head();
     global $template;
      ?>
-
+     <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N75J9H2');</script>
 
 </head>
 <body <?php body_class() ?>>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N75J9H2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript" src="//cdn.callrail.com/companies/850944822/518dfcbbcf79d9622812/12/swap.js"></script>
 
 <div id="wrapper">       
-    
+<!--     
         <header id="header" data-sticky-container data-toggler=".show-menu">
             <div class="hsnav-s5 sticky" data-sticky data-options="marginTop:0">
                 <div class="navbar">
@@ -45,5 +55,5 @@
                     </div>
                 </div>
             </div>            
-        </header>
+        </header> -->
     <main id="content" class="content">

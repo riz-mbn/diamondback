@@ -10,6 +10,7 @@ function mbn_testimonials_shortcode($atts){
     
     $cat = (isset($atts['category'])) ? $atts['category'] : '';    
     $cat = get_term_by('name', $cat, 'testimonial_cats' );
+    $returnhtml = '';
 
     $query = array(
         'post_type'      => 'testimonials_type',

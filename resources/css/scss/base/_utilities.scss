@@ -31,7 +31,7 @@
 .break {
 	display: block;
 
-	@media (max-width:1024px) {
+	@media (max-width:1258px) {
 		display: inline;
 	}
 }
@@ -97,8 +97,6 @@
         }
 
         &:not(:last-child):after {
-            content: "\63";
-            font-family: "apt-icons" !important;
         }
         a {
             color: $color-dark;
@@ -157,11 +155,9 @@
 	}
 	.slick-prev {
 		left:10px;
-		background: url(../img/icn-chev-left.svg) no-repeat center;
 	}
 	.slick-next {
 		right: 10px;
-		background: url(../img/icn-chev-right.svg) no-repeat center;
 	}
 }
 

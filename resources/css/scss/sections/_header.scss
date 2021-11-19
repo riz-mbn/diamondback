@@ -21,33 +21,6 @@ body {
     }
 }
 
-header.et-l--header {
-	&.is-top,
-	&:not(.is-stick)  {
-		.divi-header {
-			display: block !important;
-		}
-		.sticky-header {
-			display: none !important;
-		}
-	}
-	&.is-stick{
-		.divi-header {
-			display: none !important;
-		}
-		.sticky-header {
-			display: block !important;
-		}
-	}
-
-
-	.sticky-header {
-		position: fixed;
-		left: 0;
-		right: 0;
-	}
-}
-
 /* Header Sticky Nav Style 5 */
 header {    
 	position: relative;

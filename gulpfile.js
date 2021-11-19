@@ -38,8 +38,8 @@ gulp.task('sass', function(){
 gulp.task('minify:css', function(){
     return gulp.src(config.cssDir+'/**/*.css')
             .pipe(cleanCSS())
-            .pipe(lineEC())
-            .pipe(gulp.dest(config.cssDist));
+            // .pipe(lineEC())
+            .pipe(gulp.dest(config.cssDir));
 });
 
 

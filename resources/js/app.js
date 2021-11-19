@@ -6,7 +6,7 @@
             app.customDropdown();
         },	
         onLoad: function(e){
-            $(document).foundation();
+            // $(document).foundation();
             app.utils();
         },
 
